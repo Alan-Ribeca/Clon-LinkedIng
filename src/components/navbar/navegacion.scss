@@ -1,0 +1,41 @@
+.ulNav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+ 
+  .liNav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 52px;
+    max-height: 52px;
+    font-size: 12px;
+    line-height: 18px;
+
+    &:hover .logos {
+        color: rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+    }
+    
+    .logos {
+        display: flex;
+        justify-content: center;
+        color: rgb(0, 0, 0, 0.6);
+        transition: color 0.3s ease;
+    }
+
+    .imgAvatar {
+        width: 24px;
+        height: 24px;
+    }
+
+  }
+
+  .premium {
+    width: 125px;
+    font-size: 12px;
+  }
+}

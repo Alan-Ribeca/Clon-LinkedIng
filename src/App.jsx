@@ -1,9 +1,10 @@
+import { Navbar } from './components/navbar/Navbar'
 import './styles/App.scss'
 
 function App() {
   return (
     <>
-    <h1>hola linkeding</h1>
+    <Navbar />
     </>
   )
 }

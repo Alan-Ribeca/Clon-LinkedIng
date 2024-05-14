@@ -1,0 +1,40 @@
+.header {
+    padding: 0px 24px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 1128px;
+  height: 52px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 9px 0;
+
+  .logo {
+    color: #0a66c2;
+    padding: 3px 3px 3px 0;
+  }
+
+  .buscador {
+    position: relative;
+    width: 371px;
+
+    .inputBuscador {
+     width: 200px;
+      height: 34px;
+      background-color: #edf3f8;
+      border-radius: 4px;
+      border: none;
+      color: #000000e6;
+      padding: 0px 40px;
+      margin-left: 0.3rem;
+    }
+
+    .lupaBuscador {
+      position: absolute;
+      top: 8px;
+      left: 21px;
+    }
+  }
+}
