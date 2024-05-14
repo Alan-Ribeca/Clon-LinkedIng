@@ -85,31 +85,49 @@ export const Navegacion = () => {
             alt="foto de avatar predeterminada"
             className="imgAvatar"
           />
-          yo
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path
-              className="hola"
-              d="M12 15.29L7.41 10.7a1 1 0 00-1.42 1.42l5.3 5.29a1 1 0 001.4 0l5.3-5.29a1 1 0 00-1.42-1.42z"
-            />
-          </svg>
+          <div className="divAvatar">
+            Yo
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="flechaAvatar"
+              viewBox="0 0 16 13"
+            >
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
+          </div>
         </li>
-        <li className="liNav">
+        <li className="liNav negocio">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             data-supported-dps="24x24"
             fill="currentColor"
-            className="logos negocio"
+            className="logos svgNegocio"
             width="24"
             height="24"
             focusable="false"
           >
             <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
           </svg>
-          Para negocios
+          <div className="divNegocio">
+            Para negocios
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="flechaAvatar"
+              viewBox="0 0 16 13"
+            >
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
+          </div>
         </li>
         <li className="premium">
-          Interactua mejor con tu red gracias a Premium
+          Obten un mes gratis de Premium
         </li>
       </ul>
     </>

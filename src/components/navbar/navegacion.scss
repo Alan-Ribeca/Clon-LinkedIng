@@ -32,10 +32,31 @@
         height: 24px;
     }
 
+    .divAvatar {
+      display: flex;
+      width: 1.6rem;
+    }
+    
+  }
+  .negocio {
+    width: 90px;
+    padding-left: 9px;
+
+    .divNegocio {
+      display: flex;
+      text-align: center;
+    }
   }
 
+  .flechaAvatar {
+    color: rgb(0, 0, 0, 0.6);
+  }
   .premium {
     width: 125px;
     font-size: 12px;
+    padding: 9px 0 0 9px;
+    text-align: center;
+    text-decoration: underline;
+    color: #915907;
   }
 }

@@ -9,7 +9,7 @@
   height: 52px;
   margin: 0 auto;
   background-color: white;
-  padding: 9px 0;
+  padding: 0;
 
   .logo {
     color: #0a66c2;
@@ -19,6 +19,7 @@
   .buscador {
     position: relative;
     width: 371px;
+    padding-right: 3.5px;
 
     .inputBuscador {
      width: 200px;
