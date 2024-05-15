@@ -6,14 +6,14 @@
   .liNav {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 80px;
     height: 52px;
     max-height: 52px;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 16px;
     color: rgba(0, 0, 0, 0.6);
     cursor: pointer;
 
@@ -45,16 +45,22 @@
 
     .divAvatar {
       display: flex;
-      width: 1.6rem;
+      width: 1.7rem;
     }
   }
+
+  hr {
+    border-color: rgba(244, 242, 238, 0.199);
+  }
+
   .negocio {
     width: 90px;
-    padding-left: 9px;
+    padding-left: 11px;
 
     .divNegocio {
       display: flex;
       text-align: center;
+      width: 89px;
     }
   }
 
@@ -64,7 +70,8 @@
   .premium {
     width: 125px;
     font-size: 12px;
-    padding: 9px 0 0 9px;
+    line-height: 18px;
+    padding: 8px 0 0 8px;
     text-align: center;
     text-decoration: underline;
     color: #915907;
