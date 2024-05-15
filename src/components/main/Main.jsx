@@ -1,10 +1,10 @@
-import { MiCard } from "../miCard/MiCard"
+import { Container } from "../sectionContenedor/Container";
 import "./main.scss";
 
 export const Main = () => {
   return (
     <main className="main">
-        <MiCard />
+        <Container />
     </main>
   )
 }
