@@ -47,7 +47,7 @@ export const Navegacion = () => {
           >
             <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
           </svg>
-          Empleo
+          Empleos
         </li>
         <li className="liNav">
           <svg
@@ -77,7 +77,7 @@ export const Navegacion = () => {
           >
             <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
           </svg>
-          Norificaciones
+          Notificaciones
         </li>
         <li className="liNav">
           <img
@@ -89,11 +89,11 @@ export const Navegacion = () => {
             Yo
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
+              width="13"
               height="16"
               fill="currentColor"
               className="flechaAvatar"
-              viewBox="0 0 16 13"
+              viewBox="-1 5 16 1"
             >
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
             </svg>
@@ -116,11 +116,11 @@ export const Navegacion = () => {
             Para negocios
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
+              width="13"
               height="16"
               fill="currentColor"
               className="flechaAvatar"
-              viewBox="0 0 16 13"
+              viewBox="-1 5 16 1"
             >
               <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
             </svg>

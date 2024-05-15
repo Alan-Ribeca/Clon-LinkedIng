@@ -2,7 +2,7 @@
   display: flex;
   list-style: none;
   padding: 0;
- 
+
   .liNav {
     display: flex;
     flex-direction: column;
@@ -14,29 +14,39 @@
     max-height: 52px;
     font-size: 12px;
     line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 
-    &:hover .logos {
-        color: rgba(0, 0, 0, 0.9);
-        cursor: pointer;
+    &:hover {
+      color: black;
+
+      .logos path,
+      .flechaAvatar path {
+        fill: #000000e6;
+      }
+
+      .divAvatar,
+      .divNegocio {
+        color: black;
+      }
     }
-    
+
     .logos {
-        display: flex;
-        justify-content: center;
-        color: rgb(0, 0, 0, 0.6);
-        transition: color 0.3s ease;
+      display: flex;
+      justify-content: center;
+      color: rgb(0, 0, 0, 0.6);
+      transition: color 0.3s ease;
     }
 
     .imgAvatar {
-        width: 24px;
-        height: 24px;
+      width: 24px;
+      height: 24px;
     }
 
     .divAvatar {
       display: flex;
       width: 1.6rem;
     }
-    
   }
   .negocio {
     width: 90px;
@@ -58,5 +68,10 @@
     text-align: center;
     text-decoration: underline;
     color: #915907;
+
+    &:hover {
+      color: #5c3b09;
+      cursor: pointer;
+    }
   }
 }
