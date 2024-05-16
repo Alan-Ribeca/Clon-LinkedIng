@@ -1,5 +1,8 @@
 .containerGrid {
-  width: 1135px;
+  width: 1128px;
+  height: auto;
   margin: 0 auto;
   padding-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
