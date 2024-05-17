@@ -1,0 +1,102 @@
+.cardGrupos {
+  height: auto;
+  width: 225px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 8px;
+  padding-top: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+
+  .recientes {
+    padding-left: 12px;
+    .titleRec {
+      padding: 4px 0;
+      margin-bottom: 8px;
+      color: #000000e6;
+    }
+    .ulRecientes {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  .liRec {
+    margin-bottom: 4px;
+
+    .containerSvg {
+      display: flex;
+      align-items: center;
+      padding: 4px 0px;
+      .sgvGrupo {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .grupos {
+    padding: 16px 0 0 12px;
+    .texGrup {
+      padding: 5px 0;
+      margin-bottom: 4px;
+      color: #0a66c2;
+      font-weight: 600;
+    }
+
+    .ulRecientes {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  .texMostarMas {
+    display: flex;
+    align-items: center;
+    padding: 4px 24px;
+    font-weight: 600;
+
+    .flechaSvg {
+      padding-left: 3px;
+      .flechaMas {
+        fill: #0009;
+      }
+    }
+  }
+
+  .eventos {
+    margin-top: 16px;
+    padding-left: 12px;
+
+    .texEvent {
+      padding: 4px 0;
+      color: #0a66c2;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .hastags {
+      padding: 4px 0;
+      color: #0a66c2;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+  }
+
+  .hrCard {
+    border-color: rgba(244, 242, 238, 0.199);
+  }
+
+  .verMass {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    
+    .mas {
+       font-weight: 600;
+       font-size: 16px;
+
+    }
+  }
+}

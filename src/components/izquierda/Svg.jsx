@@ -6,6 +6,7 @@ export const Svg = () => {
         viewBox="0 0 16 16"
         width="16"
         height="16"
+        className="sgvGrupo"
       >
         <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
         <circle cx="8" cy="4" r="2"></circle>
