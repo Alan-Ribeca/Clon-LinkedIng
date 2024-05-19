@@ -1,7 +1,8 @@
-import "./medio.scss"
+import { Publicar } from './Publicar'
+import './medio.scss'
 
-export const medio = () => {
+export const Medio = () => {
   return (
-    <div>medio</div>
+    <Publicar />
   )
 }
