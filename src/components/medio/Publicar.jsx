@@ -6,7 +6,11 @@ export const Publicar = () => {
       <section className="buscadorContainer">
         <div className="escribir">
           <div className="img">
-            <img src="" alt="" />
+            <img
+              src="./img/avatare.jpg"
+              alt="foto de perfil del usuario"
+              className="imgMia"
+            />
           </div>
           <input
             type="text"

@@ -3,7 +3,7 @@ import "./micard.scss";
 
 export const MiCard = () => {
   return (
-    <article>
+    <article className="contenedorGeneral">
       <section className="miCard">
         <div className="containerImg">
           <div className="imgPortada">

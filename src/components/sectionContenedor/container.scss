@@ -4,5 +4,6 @@
   margin: 0 auto;
   padding-top: 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 225px 555px 300px;
+  gap: 1.5rem;
 }
