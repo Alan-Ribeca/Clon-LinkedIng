@@ -1,6 +1,89 @@
 .buscadorContainer {
-    .imgMia {
-        width: 40px;
-        height: 40px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .escribir {
+    display: flex;
+    margin-top: 12px;
+
+    .img {
+      width: 48px;
+      height: 48px;
+      margin: 0px 8px 4px 16px;
+
+      &:hover {
+        cursor: pointer;
+      }
+      .imgMia {
+        width: 100%;
+        height: 100%;
+      }
     }
+
+    .inputEscribir {
+      height: 44px;
+      width: 83%;
+      border-radius: 35px;
+      border: 1px solid #0000004d;
+      font-size: 14px;
+      color: #000000e6;
+      font-weight: 600;
+
+      &::placeholder {
+        padding: 10px 8px 10px 16px;
+        color: #424242d2;
+      }
+
+      &:hover {
+        background-color: rgb(243, 243, 243);
+        text-align: left;
+        cursor: pointer;
+      }
+
+      &:focus {
+        border: 1px solid #0000004d;
+        outline: none;
+      }
+    }
+  }
+
+  .contenido {
+    height: 52px;
+    .ulcontenido {
+      height: 52px;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+      width: 99%;
+      padding-left: 0.5px;
+      
+      .li {
+        margin-bottom: 4px;
+        margin-left: 4px;
+        display: flex;
+        align-items: center;
+
+        strong {
+          margin-left: 8px;
+          color: #0009;
+          font-size: 14px;
+          line-height: 28px;
+        }
+
+        .primerSvg {
+          fill: #378fe9;
+        }
+
+        .segundoSvg {
+          fill: #c37d16;
+        }
+
+        .tercerSvg {
+          fill: #e06847;
+        }
+      }
+    }
+  }
 }
