@@ -58,7 +58,7 @@
       padding: 0;
       width: 99%;
       padding-left: 0.5px;
-      
+
       .li {
         margin-bottom: 4px;
         margin-left: 4px;
@@ -84,6 +84,35 @@
           fill: #e06847;
         }
       }
+    }
+  }
+}
+.lineaSeparadora {
+  margin: 8px 0;
+  padding: 8px 0;
+  position: relative;
+  height: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .hrSepara {
+    width: 73%;
+    border-color: rgba(223, 223, 223, 0.473);
+  }
+  .orden {
+    position: absolute;
+    top: -1%;
+    right: 4%;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    .flechita {
+      position: absolute;
+      top: 0%;
+      right: -19%;
     }
   }
 }

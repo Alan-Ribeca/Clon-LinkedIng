@@ -9,21 +9,17 @@ export const Publicacion = () => {
       hora: "10 horas",
       titulo: "La confianza en la nube y en Google, ahora queda en duda.",
       imgPublicada: "./img/proyecFamily.png1",
-      pImg: `Google accidentally deleted a $125 billion pension fund's account`,
-      timeLenctura: "2 min de lectura",
       id: 1,
     },
     {
-      img: "./img/proyecFamily.png1",
+      img: "./img/EducacionIT.jpg",
       nombre: "EducacionIT",
       descripcion: "163.661 segudores",
       hora: "5 días",
-      titulo: "¿𝗤𝘂é 𝗱𝗶𝗳𝗲𝗿𝗲𝗻𝗰𝗶𝗮 𝗵𝗮𝘆 𝗲𝗻𝘁𝗿𝗲 𝗛𝗧𝗠𝗟 𝘆 𝗛𝗧𝗠𝗟5? 🤔",
-      imgPublicada: "./img/proyecFamily.png1",
-      pimg: `Si estás danto tus primeros pasos en el mundo de la programación o del diseño, es muy importante que conozcas estos conceptos.
-          En este artículo te contamos las principales diferencias entre estos dos lenguajes de Marcado de Hipertexto. 😎 
-          Léelo completo aquí 👉 https://lnkd.in/d4g9U2R4`,
-      timeLenctura: "2 min de lectura",
+      titulo: `Aprovecha esta oportunidad para conocer los mejores tips de armado de CV y despejar todas tus dudas, junto a Camila Pernas, experta y Career Advisor en EducacionIT. 😎
+      Inscríbete gratis ingresando al siguiente link: https://lnkd.in/dSYZngvS
+      ¡Te esperamos! 🙌"`,
+      imgPublicada: "./img/educationItImg.jpg",
       id: 2,
     },
     {
@@ -33,8 +29,7 @@ export const Publicacion = () => {
       hora: "10 horas",
       titulo: "Quedan pocos días de la #FeriaDeCursosGratis 🎡",
       imgPublicada: "./img/proyecFamily.png1",
-      pimg: `En el live de hoy te contamos cómo aprovechar al máximo y que cursos no te puedes perder. Nos vemos en 1 hr`,
-      timeLenctura: "1 min de lectura",
+
       id: 3,
     },
     {
@@ -45,8 +40,7 @@ export const Publicacion = () => {
       titulo:
         "CSS Flexbox is a powerful tool that can help you create appealing and responsive webpage layouts.",
       imgPublicada: "./img/proyecFamily.png1",
-      pimg: `And in this handbook, Benjamin teaches you its key features. He covers flex containers and flex items, shows you how all its properties work, & more.`,
-      timeLenctura: "14 min de lectura",
+
       id: 4,
     },
   ];
@@ -60,26 +54,26 @@ export const Publicacion = () => {
           hora,
           titulo,
           imgPublicada,
-          pimg,
           timeLenctura,
           id,
         }) => (
-          <div id="publicaicon" key={id} className="publicacionContainer">
+          <div key={id} className="publicacionContainer">
             <div className="publiTop">
               <img
                 src={img}
                 alt="img de la foto de perfil de la persona que publico"
               />
-              <h3>{nombre}</h3>
-              <spanp>{descripcion}</spanp>
-              <span>{hora}</span>
-              <p>{titulo}</p>
+              <div className="infoPersonal">
+                <h3 className="Name">{nombre}</h3>
+                <spanp className="descripcion">{descripcion}</spanp>
+                <span className="hora">{hora}</span>
+              </div>
             </div>
+            <p className="titlePublic">{titulo}</p>
             <div className="imgPublicada">
               <img src={imgPublicada} alt="img de la publicacion" />
             </div>
             <div className="infoImg">
-              <p>{pimg}</p>
               <span>{timeLenctura}</span>
             </div>
             <div className="reacciones">

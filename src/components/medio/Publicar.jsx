@@ -72,6 +72,7 @@ export const Publicar = () => {
               viewBox="0 0 16 16"
               width="16"
               height="16"
+              className="flechita"
             >
               <path d="M8 11L3 6h10z" fillRule="evenodd"></path>
             </svg>

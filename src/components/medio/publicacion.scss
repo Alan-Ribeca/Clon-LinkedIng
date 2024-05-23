@@ -1,0 +1,15 @@
+.publicacionContainer {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+
+    .publiTop {
+        display: flex;
+
+        .infoPersonal {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
