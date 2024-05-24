@@ -75,9 +75,10 @@ export const Publicacion = () => {
               <img
                 src={img}
                 alt="img de la foto de perfil de la persona que publico"
+                className="imgPubli"
               />
               <div className="infoPersonal">
-                <h3 className="Name">{nombre}</h3>
+                <h3 className="name">{nombre}</h3>
                 <spanp className="descripcion">{descripcion}</spanp>
                 <span className="hora">{hora}</span>
               </div>
@@ -96,7 +97,7 @@ export const Publicacion = () => {
             </div>
             <p className="titlePublic">{titulo}</p>
             <div className="imgPublicada">
-              <img src={imgPublicada} alt="img de la publicacion" />
+              <img src={imgPublicada} alt="img de la publicacion" className="imgDeLaPublicacion"/>
             </div>
             <div className="infoImg">
               <span>{timeLenctura}</span>
