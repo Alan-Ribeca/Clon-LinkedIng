@@ -64,7 +64,7 @@ export const Publicar = () => {
       <div className="lineaSeparadora">
         <hr className="hrSepara" />
         <p className="orden">
-          Ordenas por:{" "}
+          Ordenar por:{" "}
           <strong>
             Principal{" "}
             <svg

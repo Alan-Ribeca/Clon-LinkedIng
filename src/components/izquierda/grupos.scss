@@ -5,7 +5,7 @@
   border-radius: 10px;
   margin-top: 8px;
   padding-top: 12px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgb(0, 0, 0, 0.6);
   font-size: 12px;
 
   .recientes {
@@ -28,6 +28,10 @@
       display: flex;
       align-items: center;
       padding: 4px 0px;
+
+      &:hover {
+        cursor: pointer;
+      }
       .sgvGrupo {
         margin-right: 8px;
       }
@@ -58,7 +62,16 @@
     .flechaSvg {
       padding-left: 3px;
       .flechaMas {
-        fill: #0009;
+        fill: rgb(0, 0, 0, 0.6);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: #000000e6;
+
+      .flechaMas {
+        fill: #000000e6;
       }
     }
   }
@@ -72,6 +85,11 @@
       color: #0a66c2;
       font-weight: 600;
       margin-bottom: 4px;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
 
     .hastags {
@@ -79,6 +97,11 @@
       color: #0a66c2;
       font-weight: 600;
       margin-bottom: 5px;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -87,16 +110,23 @@
   }
 
   .verMass {
-    height: 50px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4rem;
-    
-    .mas {
-       font-weight: 600;
-       font-size: 16px;
 
+    &:hover {
+      cursor: pointer;
     }
+
+   .mas {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 0, 0, 0.75);
+   }
   }
 }

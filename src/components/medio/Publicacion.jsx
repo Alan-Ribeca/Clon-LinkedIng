@@ -3,18 +3,6 @@ import "./publicacion.scss";
 export const Publicacion = () => {
   const publicaciones = [
     {
-      img: "./img/proyecFamily.png1",
-      nombre: "Jorge Bumann",
-      descripcion: "Software Engineer | Creador de contenido",
-      hora: "10 horas",
-      titulo: "La confianza en la nube y en Google, ahora queda en duda.",
-      imgPublicada: "./img/proyecFamily.png1",
-      mg: "13",
-      comentario: "",
-      compartido: "",
-      id: 1,
-    },
-    {
       img: "./img/EducacionIT.jpg",
       nombre: "EducacionIT",
       descripcion: "163.661 segudores",
@@ -27,6 +15,18 @@ export const Publicacion = () => {
       comentario: "",
       compartido: "",
       id: 2,
+    },
+    {
+      img: "./img/proyecFamily.png1",
+      nombre: "Jorge Bumann",
+      descripcion: "Software Engineer | Creador de contenido",
+      hora: "10 horas",
+      titulo: "La confianza en la nube y en Google, ahora queda en duda.",
+      imgPublicada: "./img/proyecFamily.png1",
+      mg: "13",
+      comentario: "",
+      compartido: "",
+      id: 1,
     },
     {
       img: "./img/proyecFamily.png1",
@@ -82,22 +82,37 @@ export const Publicacion = () => {
                 <spanp className="descripcion">{descripcion}</spanp>
                 <span className="hora">{hora}</span>
               </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  role="none"
-                  className="opciones"
-                >
-                  <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
-                </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                fill="currentColor"
+                aria-hidden="true"
+                role="none"
+                className="opciones"
+              >
+                <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                aria-hidden="true"
+                fill="currentColor"
+                className="delete"
+              >
+                <path d="M14 3.41L9.41 8 14 12.59 12.59 14 8 9.41 3.41 14 2 12.59 6.59 8 2 3.41 3.41 2 8 6.59 12.59 2z"></path>
+              </svg>
             </div>
             <p className="titlePublic">{titulo}</p>
             <div className="imgPublicada">
-              <img src={imgPublicada} alt="img de la publicacion" className="imgDeLaPublicacion"/>
+              <img
+                src={imgPublicada}
+                alt="img de la publicacion"
+                className="imgDeLaPublicacion"
+              />
             </div>
             <div className="infoImg">
               <span>{timeLenctura}</span>
@@ -127,12 +142,12 @@ export const Publicacion = () => {
                       />
                     </g>
                   </svg>
-                  {mg}
+                  <span className="numero">{mg}</span>
                 </span>
                 <span className="comentario">{comentario}</span>
                 <span className="compartido">{compartido}</span>
               </div>
-              <hr />
+              <hr className="hrAbajo" />
               <div className="abajo">
                 <button className="btnReaccion">
                   <svg

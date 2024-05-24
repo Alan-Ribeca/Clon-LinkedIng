@@ -86,7 +86,7 @@ export const Grupos = () => {
       <hr className="hrCard" />
 
       <div className="verMass">
-        <a className="mas">Ver más</a>
+        <button className="mas">Ver más</button>
       </div>
     </section>
   );
