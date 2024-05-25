@@ -7,6 +7,7 @@
   padding-top: 12px;
   color: rgb(0, 0, 0, 0.6);
   font-size: 12px;
+  overflow: hidden;
 
   .recientes {
     padding-left: 12px;
@@ -113,18 +114,16 @@
     }
   }
 
-  .hrCard {
-    border-color: rgba(244, 242, 238, 0.199);
-  }
-
   .verMass {
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid rgba(140, 140, 140, 0.2);
 
     &:hover {
       cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.08);
     }
 
     .mas {

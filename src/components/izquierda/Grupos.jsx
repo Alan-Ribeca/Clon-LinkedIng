@@ -83,7 +83,6 @@ export const Grupos = () => {
         </p>
         <p className="hastags">Hashtags seguidos</p>
       </div>
-      <hr className="hrCard" />
 
       <div className="verMass">
         <button className="mas">Ver más</button>
