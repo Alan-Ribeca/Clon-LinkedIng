@@ -25,6 +25,9 @@
     .imgPersonal {
       text-align: center;
 
+      &:hover {
+        cursor: pointer;
+      }
       .imgPersonal {
         position: absolute;
         top: 10%;
@@ -44,7 +47,15 @@
         line-height: 24px;
         font-size: 15px;
         padding-top: 3.3rem;
-        color: #000000e6;
+        color: rgb(0, 0, 0, 0.9);
+        font-weight: 600;
+    
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          text-decoration-color: #8443ce;
+          text-decoration-thickness: 1.3px;
+        }
       }
 
       .habilidades {
@@ -74,11 +85,17 @@
         right: 12px;
         color: #0a66c2;
       }
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(0, 0, 0, 0.08);
+      }
     }
   }
 
   .premiumCard {
     height: 72px;
+    border-top: 1px solid rgb(140, 140, 140, 0.2);
     .textoPremium {
       font-size: 12px;
       padding: 12px 12px 0 12px;
@@ -95,10 +112,16 @@
         font-weight: 600;
       }
     }
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(0, 0, 0, 0.08);
+    }
   }
 
   .guardadosContainer {
     padding: 12px;
+    border-top: 1px solid rgb(140, 140, 140, 0.2);
 
     .guardados {
       display: flex;
@@ -114,6 +137,11 @@
         font-weight: 600;
         padding-left: 4px;
       }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(0, 0, 0, 0.08);
     }
   }
 }

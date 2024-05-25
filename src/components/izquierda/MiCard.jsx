@@ -33,7 +33,6 @@ export const MiCard = () => {
             Impresiones de la publicación <span className="derecha">+999</span>
           </span>
         </div>
-        <hr className="hrCard" />
         <div className="premiumCard">
           <p className="textoPremium">
             Alcanza tus objetivos profesionales con Premium
@@ -57,7 +56,6 @@ export const MiCard = () => {
             <span className="probarPremiumTexto">Probar Premium por 0 AR$</span>
           </span>
         </div>
-        <hr className="hrCard" />
         <div className="guardadosContainer">
           <span className="guardados">
             <svg
