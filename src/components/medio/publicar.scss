@@ -23,15 +23,15 @@
 
     .inputEscribir {
       height: 44px;
-      width: 83%;
+      width: 80.6%;
       border-radius: 35px;
       border: 1px solid #0000004d;
       font-size: 14px;
       color: #000000e6;
       font-weight: 600;
+      padding-left: 16px;
 
       &::placeholder {
-        padding: 10px 8px 10px 16px;
         color: #424242d2;
       }
 
@@ -64,11 +64,23 @@
         margin-left: 4px;
         display: flex;
         align-items: center;
+        padding: 8px;
+        transition: 0.1s;
+        &:hover {
+          cursor: pointer;
+          background-color: #8c8c8c1a;
+          border-radius: 4px;
+
+          strong {
+            color: rgba(0, 0, 0, 0.9);
+          }
+        }
 
         strong {
           margin-left: 8px;
-          color: #0009;
+          color: rgba(0, 0, 0, 0.75);
           font-size: 14px;
+          font-weight: 600;
           line-height: 28px;
         }
 

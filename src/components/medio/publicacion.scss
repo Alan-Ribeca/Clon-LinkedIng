@@ -15,6 +15,7 @@
       width: 48px;
       height: 48px;
       margin: 2px 10px 10px 0px;
+      border-radius: 50%;
     }
 
     .infoPersonal {
@@ -26,10 +27,11 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: 600;
-
+        width: max-content;
         &:hover {
           color: #0a66c2;
           cursor: pointer;
+          text-decoration: underline;
         }
       }
 
@@ -37,6 +39,11 @@
         color: #0009;
         font-size: 12px;
         line-height: 16px;
+        box-sizing: inherit;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 311px;
       }
 
       .hora {
@@ -78,15 +85,48 @@
 
   .detalles {
     margin-top: 2px;
-
+    display: flex;
+    width: 540px;
+    height: 35px;
     .mg {
       display: flex;
       align-items: center;
-      margin: 0 0 8px 15px;
+      margin-left: 15px;
+      width: 306px;
+      height: 100%;
 
       .numero {
         font-size: 12px;
         margin-left: 2px;
+
+        &:hover {
+          cursor: pointer;
+          color: #0a66c2;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .spanButtom {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+
+      &.comentario {
+        margin-right: 0.3rem;
+
+        &::after {
+          content: "\00b7";
+          font-size: 1.2rem;
+          color: rgb(0, 0, 0, 0.6);
+          font-weight: 700;
+          margin-left: 0.3rem;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        color: #0a66c2;
       }
     }
   }

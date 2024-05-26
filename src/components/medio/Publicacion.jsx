@@ -55,7 +55,7 @@ export const Publicacion = () => {
     },
     {
       img: "./img/public5Perf.jpeg",
-      nombre: "Miguel Ángel Durán GarcíaMiguel Ángel Durán García",
+      nombre: "Miguel Ángel Durán García",
       descripcion:
         "Programación JavaScript y Desarrollo Web. Reconocido Google Developer Expert, Microsoft MVP y GitHub Star. ⭐",
       hora: "17 horas",
@@ -159,8 +159,8 @@ export const Publicacion = () => {
                   </svg>
                   <span className="numero">{mg}</span>
                 </span>
-                <span className="comentario">{comentario}</span>
-                <span className="compartido">{compartido}</span>
+                <span className="spanButtom comentario">{comentario}</span>
+                <span className="spanButtom compartido">{compartido}</span>
               </div>
               <hr className="hrAbajo" />
               <div className="abajo">
