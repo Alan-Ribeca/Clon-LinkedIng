@@ -47,6 +47,15 @@
       display: flex;
       width: 1.7rem;
     }
+
+    &.home {
+      color: black;
+      border-bottom: 2px solid rgb(0, 0, 0);
+      .logos path,
+      .flechaAvatar path {
+        fill: #000000e6;
+      }
+    }
   }
 
   hr {

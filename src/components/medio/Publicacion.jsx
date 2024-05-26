@@ -3,6 +3,21 @@ import "./publicacion.scss";
 export const Publicacion = () => {
   const publicaciones = [
     {
+      img: "./img/public5Perf.jpeg",
+      nombre: "Miguel Ángel Durán García",
+      descripcion:
+        "Programación JavaScript y Desarrollo Web. Reconocido Google Developer Expert, Microsoft MVP y GitHub Star. ⭐",
+      hora: "17 horas",
+      titulo: `Libros de Programación Gratuitos y en Español
+        JavaScript, Python, Go, Java, Kotlin, PHP y más:
+        → https://lnkd.in/eyqr2_H9`,
+      imgPublicada: "./img/public5.jpeg",
+      mg: "1358",
+      comentario: "26 comentarios",
+      compartido: "311 veces compartido",
+      id: 5,
+    },
+    {
       img: "./img/EducacionIT.jpg",
       nombre: "EducacionIT",
       descripcion: "163.661 segudores",
@@ -52,21 +67,6 @@ export const Publicacion = () => {
       comentario: "",
       compartido: "",
       id: 4,
-    },
-    {
-      img: "./img/public5Perf.jpeg",
-      nombre: "Miguel Ángel Durán García",
-      descripcion:
-        "Programación JavaScript y Desarrollo Web. Reconocido Google Developer Expert, Microsoft MVP y GitHub Star. ⭐",
-      hora: "17 horas",
-      titulo: `Libros de Programación Gratuitos y en Español
-        JavaScript, Python, Go, Java, Kotlin, PHP y más:
-        → https://lnkd.in/eyqr2_H9`,
-      imgPublicada: "./img/public5.jpeg",
-      mg: "1358",
-      comentario: "26 comentarios",
-      compartido: "311 veces compartido",
-      id: 5,
     },
   ];
   return (

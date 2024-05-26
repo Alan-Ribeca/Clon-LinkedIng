@@ -1,4 +1,4 @@
-import "derecha.scss";
+import "./derecha.scss";
 
 export const Derecha = () => {
   return (
