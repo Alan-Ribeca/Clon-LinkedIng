@@ -1,6 +1,27 @@
 import "./derecha.scss";
 
 export const Derecha = () => {
+  const personas = [
+    {
+      id: 1,
+      img: "./img/public5Perf.jpeg",
+      nombre: "María González",
+      talento: "IT Talent Acquisition | IT Recruiter en CFO Tech Latam 🚀",
+    },
+    {
+      id: 2,
+      img: "./img/public5Perf.jpeg",
+      nombre: "Juan Martínez",
+      talento:
+        "Analista de selección en ADN-Recursos Humanos || RRHH, Recruiter || Talento de desarrollo web",
+    },
+    {
+      id: 3,
+      img: "./img/public5Perf.jpeg",
+      nombre: "Devsafio - Sin Juniors No Hay Seniors",
+      talento: "Empresa • Consultoría de estrategia",
+    },
+  ];
   return (
     <article className="containerSeguir">
       <section className="agregarSeguidores">
@@ -22,35 +43,51 @@ export const Derecha = () => {
             </svg>
           </span>
         </div>
-        <div className="seguir">
-          <img
-            src="./img/public1Perf.jpeg"
-            alt="img de perfil de la persona a seguir"
-          />
-          <div className="info">
-            <p className="nombre">Maria Sol</p>
-            <span className="talento">
-              IT Talent Acquisition | IT Recruiter en CFO Tech Latam 🚀
-            </span>
-            <button className="btnSeguir">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                id="add-small"
-                aria-hidden="true"
-                role="none"
-                data-supported-dps="16x16"
-                fill="currentColor"
-                width={16}
-                height={16}
-                className="cruz"
-              >
-                <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
-              </svg>
-              Seguir
-            </button>
+        {personas.map(({ nombre, talento, img, id }) => (
+          <div className="seguir" key={id}>
+            <img src={img} alt="img de perfil de la persona a seguir" />
+            <div className="info">
+              <p className="nombre">{nombre}</p>
+              <span className="talento">{talento}</span>
+              <button className="btnSeguir">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  id="add-small"
+                  aria-hidden="true"
+                  role="none"
+                  data-supported-dps="16x16"
+                  fill="currentColor"
+                  width={16}
+                  height={16}
+                  className="cruz"
+                >
+                  <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+                </svg>
+                Seguir
+              </button>
+            </div>
           </div>
-        </div>
+        ))}
+        <p className="recomendaciones">
+          Ver todas las recomendaciones
+          <strong className="strongReco">
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+            role="none"
+            data-supported-dps="16x16"
+            fill="currentColor"
+            width={16}
+            height={16}
+            className="flecha"
+            >
+            <path d="M11.45 3L15 8l-3.55 5H9l2.84-4H2V7h9.84L9 3z"></path>
+          </svg>
+            </strong>
+        </p>
       </section>
     </article>
   );
