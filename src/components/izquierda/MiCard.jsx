@@ -41,8 +41,8 @@ export const MiCard = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              width="17"
-              height="17"
+              width="16"
+              height="16"
             >
               <path
                 d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
@@ -61,11 +61,12 @@ export const MiCard = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
+              fill="currentColor"
+              className="svgGuardado"
               width="16"
               height="16"
-              className="svgGuardado"
             >
-              <path d="M13 0H3a2 2 0 00-2 2v14l6-3 6 3V2a2 2 0 00-2-2z"></path>
+              <path d="M13 4a3 3 0 00-3-3H3v14l5-4.5 5 4.5z"></path>
             </svg>
             <span className="guardadoTexto">Elementos guardados</span>
           </span>

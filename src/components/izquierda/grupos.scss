@@ -2,18 +2,19 @@
   height: auto;
   width: 225px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-top: 8px;
   padding-top: 12px;
   color: rgb(0, 0, 0, 0.6);
   font-size: 12px;
   overflow: hidden;
+  box-shadow: 0px 0px 0px 1px rgb(140, 140, 140, 0.2);
 
   .recientes {
     padding-left: 12px;
     .titleRec {
       padding: 4px 0;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
       color: #000000e6;
     }
     .ulRecientes {
@@ -23,7 +24,6 @@
   }
 
   .liRec {
-    margin-bottom: 4px;
     color: rgb(0, 0, 0, 0.6);
     .containerSvg {
       display: flex;
@@ -50,8 +50,8 @@
   .grupos {
     padding: 16px 0 0 12px;
     .texGrup {
-      padding: 5px 0;
-      margin-bottom: 4px;
+      padding: 8px 0 5px 0;
+      margin-bottom: 3px;
       color: #0a66c2;
       font-weight: 600;
     }
@@ -65,11 +65,15 @@
   .texMostarMas {
     display: flex;
     align-items: center;
-    padding: 4px 24px;
+    padding: 5px 24px 0 24px;
     font-weight: 600;
+    position: relative;
 
     .flechaSvg {
       padding-left: 3px;
+      position: absolute;
+      top: 29%;
+      left: 43.5%;
       .flechaMas {
         fill: rgb(0, 0, 0, 0.6);
       }
@@ -90,7 +94,7 @@
     padding-left: 12px;
 
     .texEvent {
-      padding: 4px 0;
+      padding: 14px 0 4px 0;
       color: #0a66c2;
       font-weight: 600;
       margin-bottom: 4px;
@@ -102,7 +106,7 @@
     }
 
     .hastags {
-      padding: 4px 0;
+      padding: 8px 0 3px 0;
       color: #0a66c2;
       font-weight: 600;
       margin-bottom: 5px;
@@ -115,7 +119,7 @@
   }
 
   .verMass {
-    height: 45px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,6 +138,7 @@
       font-size: 14px;
       font-weight: 600;
       color: rgb(0, 0, 0, 0.75);
+      padding-bottom: 2px;
     }
   }
 }

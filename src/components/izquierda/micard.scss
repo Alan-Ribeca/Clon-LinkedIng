@@ -2,8 +2,9 @@
   height: max-content;
   width: 225px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0px 0px 0px 1px rgb(140, 140, 140, 0.2);
 
   .hrCard {
     border-color: rgba(244, 242, 238, 0.199);
@@ -12,13 +13,13 @@
   .containerImg {
     position: relative;
     width: 225px;
-    height: 184px;
+    height: 183px;
     .imgPortada {
       width: 100%;
       height: 56px;
       .portadaImg {
         width: 100%;
-        height: 56px;
+        height: 55px;
       }
     }
 
@@ -45,11 +46,11 @@
 
       .nombre {
         line-height: 24px;
-        font-size: 15px;
-        padding-top: 3.3rem;
+        font-size: 16px;
+        padding-top: 3.2rem;
         color: rgb(0, 0, 0, 0.9);
         font-weight: 600;
-    
+
         &:hover {
           cursor: pointer;
           text-decoration: underline;
@@ -61,25 +62,26 @@
       .habilidades {
         font-size: 12px;
         line-height: 1.33333;
-        margin-top: 3px;
+        margin-top: 3.6px;
         padding: 0 12px;
       }
     }
   }
 
   .containerSpan {
-    height: 48px;
+    height: 45.97px;
     font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 12px 0;
+    padding: 12px 0 13.5px 0;
 
     .visualizaciones {
       padding: 4px 12px;
       position: relative;
       color: #0009;
       font-weight: 600;
+      line-height: 16px;
       span.derecha {
         position: absolute;
         right: 12px;
@@ -126,8 +128,10 @@
     .guardados {
       display: flex;
       align-items: center;
-      padding-left: 2px;
 
+      .svgGuardado {
+        padding-right: 4px;
+      }
       .svgGuardado path {
         fill: rgba(0, 0, 0, 0.6);
       }
