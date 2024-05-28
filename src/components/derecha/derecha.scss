@@ -7,8 +7,9 @@
   .titleContainer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     position: relative;
+    margin-top: 1px;
     .title {
       font-weight: 600;
       font-size: 16px;
@@ -20,7 +21,7 @@
         fill:rgb(64, 64, 64);
         position: absolute;
         right: 0%;
-        bottom: -3%;
+        bottom: -1%;
         &:hover {
           cursor: pointer;
         }
@@ -46,6 +47,7 @@
         color: #000000e6;
         font-size: 14px;
         font-weight: 600;
+        padding-bottom: 1px;
       }
 
       .talento {
@@ -70,12 +72,13 @@
         text-align: center;
         align-items: center;
         border-radius: 16px;
-        border: 1px solid black;
+        border: 1px solid rgba(0, 0, 0, 0.75);
         background-color: transparent;
         line-height: 20px;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 600;
         padding-left: 13px;
+        color: rgba(0, 0, 0, 0.75);
 
         .cruz {
           padding-right: 4px;
