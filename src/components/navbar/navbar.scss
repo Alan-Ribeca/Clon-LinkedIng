@@ -1,6 +1,6 @@
 .header {
   padding: 0px 25px;
-  border-bottom: 1px solid rgb(244, 242, 238);
+  border-bottom: 1px solid rgb(140, 140, 140, 0.2);
 }
 
 .navbar {
@@ -11,11 +11,11 @@
   margin: 0 auto;
   background-color: white;
   padding: 0;
-  padding-left: 26px;
+  padding-left: 21px;
 
   .logo {
     color: #0a66c2;
-    padding-right: 3px ;
+    padding-right: 3px;
     width: 38px;
     height: 35px;
 
@@ -27,7 +27,7 @@
   .buscador {
     position: relative;
     width: 371px;
-    padding-right: 3.5px;
+    padding-right: 1.5px;
 
     .inputBuscador {
       width: 200px;
@@ -37,7 +37,7 @@
       border: none;
       color: #000000e6;
       padding: 0px 40px;
-      margin-left: 0.3rem;
+      margin-left: 0.1rem;
     }
 
     .lupaBuscador {
