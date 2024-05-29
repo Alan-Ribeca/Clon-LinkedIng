@@ -6,4 +6,57 @@
   display: grid;
   grid-template-columns: 225px 555px 300px;
   gap: 1.5rem;
+  position: relative;
+
+  .mensaje {
+    position: fixed;
+    bottom: 0%;
+    right: 0.4%;
+    display: flex;
+    height: 48.7px;
+    width: 288px;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 1px rgba(140, 140, 140, 0.2);
+
+    .imgMensaje {
+      display: flex;
+      align-items: center;
+      margin: 0px 4px;
+      padding: 4px;
+      width: 41%;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+      .pMensaje {
+        padding-left: 8px;
+        color: #000000e6;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+
+    .logos {
+      display: flex;
+      align-items: center;
+      width: 54%;
+      ul {
+        display: flex;
+        width: 100%;
+        padding-left: 58px;
+        .logosMsj {
+          width: 100%;
+          list-style: none;
+          display: flex;
+
+          .svgMensaje {
+            fill: rgba(0, 0, 0, 0.719);
+          }
+        }
+      }
+    }
+  }
 }
