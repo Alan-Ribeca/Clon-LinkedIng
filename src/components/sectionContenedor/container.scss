@@ -47,11 +47,16 @@
         display: flex;
         width: 100%;
         padding-left: 58px;
+
         .logosMsj {
           width: 100%;
           list-style: none;
           display: flex;
+          height: 100%;
 
+          &:hover {
+            cursor: pointer;
+          }
           .svgMensaje {
             fill: rgba(0, 0, 0, 0.719);
           }
@@ -60,3 +65,4 @@
     }
   }
 }
+
