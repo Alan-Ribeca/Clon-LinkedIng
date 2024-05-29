@@ -1,21 +1,21 @@
 .header {
-  padding: 0px 25px;
+  padding: 0px 1.5rem;
   border-bottom: 1px solid rgb(140, 140, 140, 0.2);
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  width: 1136px;
+  width: 71rem;
   height: 52px;
   margin: 0 auto;
   background-color: white;
   padding: 0;
-  padding-left: 21px;
+  padding-left: 1rem;
 
   .logo {
     color: #0a66c2;
-    padding-right: 3px;
+    padding-right: 0.4rem;
     width: 38px;
     height: 35px;
 
@@ -27,23 +27,23 @@
   .buscador {
     position: relative;
     width: 371px;
-    padding-right: 1.5px;
+    padding-right: 0.1rem;
 
     .inputBuscador {
-      width: 200px;
+      width: 12.5rem;
       height: 34px;
       background-color: #edf3f8;
       border-radius: 4px;
       border: none;
       color: #000000e6;
-      padding: 0px 40px;
+      padding: 0px 2.5rem;
       margin-left: 0.1rem;
     }
 
     .lupaBuscador {
       position: absolute;
-      top: 11px;
-      left: 21px;
+      top: 31%;
+      left: 5.6%;
     }
   }
 }

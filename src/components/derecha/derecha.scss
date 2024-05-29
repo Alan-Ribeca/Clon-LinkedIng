@@ -1,18 +1,18 @@
 .containerSeguir {
   border-radius: 8px;
-  height: 382px;
-  padding: 12px;
+  height: 23.875rem;
+  padding: 0.75rem;
   background-color: white;
   box-shadow: 0px 0px 0px 1px rgb(140, 140, 140, 0.2);
   .titleContainer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
     position: relative;
     margin-top: 1px;
     .title {
       font-weight: 600;
-      font-size: 16px;
+      font-size: 1rem;
       color: rgba(0, 0, 0, 0.9);
     }
 
@@ -31,13 +31,13 @@
 
   .seguir {
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 
     img {
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      margin-right: 12px;
+      margin-right: 0.75rem;
     }
     .info {
       display: flex;
@@ -45,49 +45,49 @@
 
       .nombre {
         color: #000000e6;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 600;
         padding-bottom: 1px;
       }
 
       .talento {
         color: rgba(0, 0, 0, 0.6);
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 20px;
         height: max-content;
-        width: 216px;
+        width: 13.5rem;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
-        margin-bottom: 4px;
+        margin-bottom: 0.25rem;
       }
 
       .btnSeguir {
-        width: 96px;
+        width: 6rem;
         height: 32px;
         display: flex;
         justify-content: flex-start;
         text-align: center;
         align-items: center;
-        border-radius: 16px;
+        border-radius: 1rem;
         border: 1px solid rgba(0, 0, 0, 0.75);
         background-color: transparent;
         line-height: 20px;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 600;
-        padding-left: 13px;
+        padding-left: 0.8125rem;
         color: rgba(0, 0, 0, 0.75);
 
         .cruz {
-          padding-right: 4px;
+          padding-right: 0.25rem;
         }
 
         &:hover {
             background-color: #8c8c8c1a;
             cursor: pointer;
-            padding-left: 12px;
+            padding-left: 0.75rem;
             border: 2px solid black;
         }
       }
@@ -95,12 +95,12 @@
   }
 
   .recomendaciones {
-    width: 220px;
-    margin-top: 14px;
+    width: 13.75rem;
+    margin-top: 0.875rem;
     color: rgba(0, 0, 0, 0.75);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
-    padding: 2px 8px;
+    padding: 0.125rem 0.5rem;
     position: relative;
 
     .strongReco {
@@ -110,7 +110,7 @@
     }
 
     &:hover {
-      border-radius: 4px;
+      border-radius: 0.25rem;
       cursor: pointer;
       color: #000000E6;
       background-color: rgba(140, 140, 140, 0.1);

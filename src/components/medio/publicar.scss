@@ -6,12 +6,12 @@
 
   .escribir {
     display: flex;
-    margin-top: 12px;
+    margin-top: 0.75rem;
 
     .img {
       width: 48px;
       height: 48px;
-      margin: 0px 8px 4px 16px;
+      margin: 0 0.5rem 0.25rem 1rem;
 
       &:hover {
         cursor: pointer;
@@ -27,10 +27,10 @@
       width: 80.6%;
       border-radius: 35px;
       border: 1px solid #0000004d;
-      font-size: 14px;
+      font-size: 0.875rem;
       color: #000000e6;
       font-weight: 600;
-      padding-left: 16px;
+      padding-left: 1rem;
 
       &::placeholder {
         color: #424242d2;
@@ -61,11 +61,11 @@
       padding-left: 0.5px;
 
       .li {
-        margin-bottom: 4px;
-        margin-left: 4px;
+        margin-bottom: 0.25rem;
+        margin-left:  0.25rem;
         display: flex;
         align-items: center;
-        padding: 8px;
+        padding: 0.5rem;
         transition: 0.1s;
         &:hover {
           cursor: pointer;
@@ -78,9 +78,9 @@
         }
 
         strong {
-          margin-left: 8px;
+          margin-left: 0.5rem;
           color: rgba(0, 0, 0, 0.75);
-          font-size: 14px;
+          font-size: 0.875rem;
           font-weight: 600;
           line-height: 28px;
         }
@@ -101,8 +101,8 @@
   }
 }
 .lineaSeparadora {
-  margin-top: 8px;
-  padding-top: 8px;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   position: relative;
   height: 16px;
 
@@ -118,7 +118,7 @@
     position: absolute;
     top: -1%;
     right: 4%;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     text-align: center;
 

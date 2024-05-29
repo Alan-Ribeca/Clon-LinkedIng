@@ -1,8 +1,8 @@
 .containerGrid {
-  width: 1128px;
+  width: 70.5rem;
   height: 100%;
   margin: 0 auto;
-  padding-top: 23.3px;
+  padding-top: 1.45rem;
   display: grid;
   grid-template-columns: 225px 555px 300px;
   gap: 1.5rem;
@@ -14,7 +14,7 @@
     right: 0.4%;
     display: flex;
     height: 48.7px;
-    width: 288px;
+    width: 18rem;
     background-color: white;
     border-radius: 8px 8px 0 0;
     overflow: hidden;
@@ -32,9 +32,9 @@
         height: 32px;
       }
       .pMensaje {
-        padding-left: 8px;
+        padding-left: 0.48rem;
         color: #000000e6;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 600;
       }
     }
@@ -46,7 +46,7 @@
       ul {
         display: flex;
         width: 100%;
-        padding-left: 58px;
+        padding-left: 3.625rem;
 
         .logosMsj {
           width: 100%;

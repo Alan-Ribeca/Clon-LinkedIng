@@ -1,20 +1,20 @@
 .cardGrupos {
   height: auto;
-  width: 225px;
+  width: 14.0625rem;
   background-color: white;
   border-radius: 8px;
-  margin-top: 8px;
+  margin-top: 0.5rem;
   padding-top: 12px;
   color: rgb(0, 0, 0, 0.6);
-  font-size: 12px;
+  font-size: 0.75rem;
   overflow: hidden;
   box-shadow: 0px 0px 0px 1px rgb(140, 140, 140, 0.2);
 
   .recientes {
-    padding-left: 12px;
+    padding-left: 0.75rem;
     .titleRec {
-      padding: 4px 0;
-      margin-bottom: 4px;
+      padding: 0.25rem 0;
+      margin-bottom: 0.25rem;
       color: #000000e6;
     }
     .ulRecientes {
@@ -28,7 +28,7 @@
     .containerSvg {
       display: flex;
       align-items: center;
-      padding: 4px 0px;
+      padding: 0.25rem 0;
       font-weight: 600;
       transition: 0.1s;
 
@@ -36,21 +36,21 @@
         cursor: pointer;
         color: rgb(0, 0, 0, 0.9);
         background-color: rgba(0, 0, 0, 0.08);
-        margin-left: -12px; /* Ajusta el margen negativo */
-        padding-left: 12px; /* Compensa el margen negativo */
-        width: calc(94.2% + 12px); /* Ajusta el ancho */
+        margin-left: -0.75rem; 
+        padding-left:  0.75rem; 
+        width: calc(94.2% + 12px); 
       }
       .sgvGrupo {
-        margin-right: 8px;
+        margin-right: 0.5rem;
         fill: rgb(0, 0, 0, 0.75);
       }
     }
   }
 
   .grupos {
-    padding: 16px 0 0 12px;
+    padding: 1rem 0 0 0.75rem;
     .texGrup {
-      padding: 8px 0 5px 0;
+      padding: 0.5rem 0 0.3125rem 0;
       margin-bottom: 3px;
       color: #0a66c2;
       font-weight: 600;
@@ -65,12 +65,12 @@
   .texMostarMas {
     display: flex;
     align-items: center;
-    padding: 5px 24px 0 24px;
+    padding: 0.3125rem 1.5rem 0 1.5rem;
     font-weight: 600;
     position: relative;
 
     .flechaSvg {
-      padding-left: 3px;
+      padding-left: 0.187rem;
       position: absolute;
       top: 36%;
       left: 43.5%;
@@ -90,14 +90,14 @@
   }
 
   .eventos {
-    margin-top: 16px;
-    padding-left: 12px;
+    margin-top: 1rem;
+    padding-left: 0.75rem;
 
     .texEvent {
-      padding: 14px 0 4px 0;
+      padding: 0.875rem 0 0.25rem 0;
       color: #0a66c2;
       font-weight: 600;
-      margin-bottom: 4px;
+      margin-bottom: 0.25rem;
 
       &:hover {
         cursor: pointer;
@@ -106,10 +106,10 @@
     }
 
     .hastags {
-      padding: 8px 0 3px 0;
+      padding: 0.5rem 0 0.1875rem 0;
       color: #0a66c2;
       font-weight: 600;
-      margin-bottom: 5px;
+      margin-bottom: 0.3125rem;
 
       &:hover {
         cursor: pointer;
@@ -135,10 +135,10 @@
       height: 100%;
       background-color: transparent;
       border: none;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 600;
       color: rgb(0, 0, 0, 0.75);
-      padding-bottom: 2px;
+      padding-bottom: 0.125rem;
     }
   }
 }
