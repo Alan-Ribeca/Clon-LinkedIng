@@ -15,18 +15,20 @@
 
   .containerLogo {
     padding-left: 0.1rem;
+    display: flex;
+
     .logo {
       color: #0a66c2;
-    padding-right: 0.3rem;
-    width: 38px;
-    height: 35px;
-    
-    &:hover {
-      cursor: pointer;
+      padding-right: 0.3rem;
+      width: 38px;
+      height: 35px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
-}
-  
+
   .buscador {
     position: relative;
     width: 371px;
@@ -51,7 +53,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) { 
+@media screen and (max-width: 1199px) {
   .navbar {
     padding-left: 0.5rem;
     width: 100%;
