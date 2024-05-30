@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding-top: 1.45rem;
   display: grid;
+  justify-content: center;
   grid-template-columns: 225px 555px 300px;
   gap: 1.5rem;
   position: relative;
@@ -63,6 +64,11 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .containerGrid {
+    grid-template-columns: 225px 387px 300px;
   }
 }
 

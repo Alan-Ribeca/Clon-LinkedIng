@@ -134,3 +134,43 @@
     }
   }
 }
+
+@media screen and (max-width: 1199px) { 
+  .buscadorContainer {
+    .escribir .inputEscribir {
+      width: 72.2%;
+    }
+    .contenido {
+      height: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .ulcontenido {
+        flex-wrap: wrap;
+        height: 97px;
+        width: 100%;
+        padding-top: 0.09rem;
+        .li {
+          margin-left: 0;
+
+          strong {
+            margin-left: 0.47rem;
+          }
+        }
+      }
+    }
+  }
+
+  .lineaSeparadora {
+    .hrSepara {
+      width: 61.5%;
+    }
+    .orden {
+      right: 5.4%;
+
+      .flechita {
+        right: -21px;
+      }
+    }
+  }
+}

@@ -175,3 +175,33 @@
     }
   }
 }
+
+@media screen and (max-width: 1199px) { 
+  .publicacionContainer {
+
+    .publiTop { 
+      .opciones {
+        margin-left: -12rem;
+      }
+
+      .delete {
+        margin-left: 0.53rem;
+      }
+    }
+    .titlePublic {
+      width: 90%;
+    }
+
+    .detalles {
+      width: 100%;
+
+      .mg {
+        width: 9.12rem;
+      }
+    }
+
+   .abajo .btnReaccion .textoBtn {
+    display: none;
+   }
+  }
+}
