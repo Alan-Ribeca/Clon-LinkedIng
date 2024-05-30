@@ -69,6 +69,12 @@
 @media screen and (max-width: 1199px) {
   .containerGrid {
     grid-template-columns: 225px 387px 300px;
+    width: 100%;
   }
 }
 
+@media screen and (max-width: 991px) { 
+  .containerGrid {
+    grid-template-columns: 225px 400px;
+  }
+}
