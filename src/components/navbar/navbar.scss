@@ -29,6 +29,10 @@
     }
   }
 
+  .lupaMovil {
+    display: none;
+  }
+
   .buscador {
     position: relative;
     width: 371px;
@@ -67,6 +71,36 @@
 
       .inputBuscador {
         width: 53.9%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0;
+    .navbar {
+      padding-left: 1.3rem;
+      position: relative;
+      .buscador {
+        .inputBuscador {
+          display: none;
+        }
+
+        .lupaBuscador {
+          display: none;
+        }
+      }
+
+      .lupaMovil {
+        display: block;
+        color: #0009;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-size: 0.75rem;
+        width: 6.5%;
       }
     }
   }

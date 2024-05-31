@@ -62,7 +62,7 @@
 
       .li {
         margin-bottom: 0.25rem;
-        margin-left:  0.25rem;
+        margin-left: 0.25rem;
         display: flex;
         align-items: center;
         padding: 0.5rem;
@@ -135,7 +135,7 @@
   }
 }
 
-@media screen and (max-width: 1199px) { 
+@media screen and (max-width: 1199px) {
   .buscadorContainer {
     .escribir .inputEscribir {
       width: 72.2%;
@@ -171,6 +171,32 @@
       .flechita {
         right: -21px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .buscadorContainer {
+    height: 7.25rem;
+    .escribir .inputEscribir {
+      width: 77.1%;
+    }
+    .contenido {
+      height: 0;
+
+      .ulcontenido {
+        height: 0;
+      }
+    }
+  }
+
+  .lineaSeparadora {
+    .hrSepara {
+      width: 68.5%;
+    }
+  
+    .orden {
+      right: 4.5%;
     }
   }
 }
