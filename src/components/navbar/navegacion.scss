@@ -92,16 +92,39 @@
   }
 }
 
-@media screen and (max-width: 1024px) { 
-
+@media screen and (max-width: 1024px) {
   .ulNav {
     position: absolute;
     left: 12.6%;
   }
 }
 
-@media screen and (max-width: 991px) { 
+@media screen and (max-width: 991px) {
   .ulNav {
     left: 13%;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .ulNav {
+    left: 14%;
+    .liNav {
+      width: 4.5rem;
+      &.home {
+        border-bottom: none;
+      }
+
+      .divAvatar {
+        display: none;
+      }
+
+      .divNegocio {
+        display: none;
+      }
+    }
+
+    .nombreLogo {
+      display: none;
+    }
   }
 }
