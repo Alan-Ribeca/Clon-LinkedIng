@@ -73,6 +73,20 @@ export const MiCard = () => {
         </div>
       </section>
       <Grupos />
+      <div className="containerVerMas">
+        <button className="mostrarMasBtn">
+          <span className="mostrarMas">Mostrar más</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            width="16"
+            height="16"
+          >
+            <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+          </svg>
+        </button>
+      </div>
     </article>
   );
 };

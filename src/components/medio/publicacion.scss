@@ -176,10 +176,9 @@
   }
 }
 
-@media screen and (max-width: 1199px) { 
+@media screen and (max-width: 1199px) {
   .publicacionContainer {
-
-    .publiTop { 
+    .publiTop {
       .opciones {
         margin-left: -12rem;
       }
@@ -200,8 +199,30 @@
       }
     }
 
-   .abajo .btnReaccion .textoBtn {
-    display: none;
-   }
+    .abajo .btnReaccion .textoBtn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .publicacionContainer {
+    .publiTop {
+      .infoPersonal {
+        width: 684px;
+      }
+
+      .delete {
+        margin-left: 0px;
+      }
+    }
+
+    .detalles .mg {
+      width: 20.12rem;
+    }
+
+    .abajo .btnReaccion .textoBtn {
+      display: block;
+    }
   }
 }

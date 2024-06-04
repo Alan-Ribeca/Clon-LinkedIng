@@ -150,14 +150,19 @@
   }
 }
 
+.containerVerMas {
+  display: none;
+}
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 767px) {
   .contenedorGeneral {
-
     .miCard {
       width: 100%;
 
-      .hrCard, .containerSpan, .premiumCard, .guardadosContainer {
+      .hrCard,
+      .containerSpan,
+      .premiumCard,
+      .guardadosContainer {
         display: none;
       }
 
@@ -174,5 +179,33 @@
         }
       }
     }
+
+    .containerVerMas {
+      display: block;
+      display: flex;
+      justify-content: center;
+      margin-top: 0.55rem;
+      .mostrarMasBtn {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+
+        .mostrarMas {
+          font-weight: 600;
+          color: rgb(0, 0, 0, 0.9);
+          font-size: 14px;
+          padding-right: 0.2rem;
+        }
+
+        svg {
+          padding-top: 0.1rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
-} 
+}

@@ -200,3 +200,20 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) { 
+  .buscadorContainer .escribir .inputEscribir { 
+    width: 81.4%;
+  }
+
+  .lineaSeparadora {
+
+    .hrSepara{
+      width: 74.3%;
+    }
+
+    .orden {
+      right: 3.7%;
+    }
+  }
+}
