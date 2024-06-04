@@ -1,6 +1,10 @@
 .header {
   padding: 0px 1.5rem;
   border-bottom: 1px solid rgb(140, 140, 140, 0.2);
+
+  .navbar .containerMovil {
+    display: none;
+  }
 }
 
 .navbar {
@@ -106,15 +110,31 @@
   }
 }
 
-@media screen and (max-width: 852px) { 
+@media screen and (max-width: 852px) {
   .buscarMovil {
     display: none;
   }
 }
 
-
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 600px) {
   .header .navbar {
     padding: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containerLogo,
+  .lupaMovil,
+  .buscador,
+  .ulNav {
+    display: none !important;
+  }
+
+  .header {
+    .navbar {
+      .containerMovil {
+        display: block;
+      }
+    }
   }
 }

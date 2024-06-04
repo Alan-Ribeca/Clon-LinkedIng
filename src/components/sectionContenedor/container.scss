@@ -91,5 +91,9 @@
 @media screen and (max-width: 600px) { 
   .containerGrid {
     grid-template-columns: 450px;
+
+    .mensaje {
+      display: none;
+    }
   }
 }

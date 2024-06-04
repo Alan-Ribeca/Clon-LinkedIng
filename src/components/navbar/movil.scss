@@ -1,0 +1,42 @@
+.header {
+  .navbar {
+    .containerMovil {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 0rem 1rem;
+
+      .imgAvatar {
+        width: 35px;
+        height: 35px;
+      }
+
+      .buscadorCelu {
+        margin-left: 0.7rem;
+        width: 70%;
+        position: relative;
+
+        .inputBuscador {
+          width: 90%;
+          height: 2rem;
+          border-radius: 4px;
+          border: none;
+          background-color: #edf3f8;
+          padding-left: 2rem;
+        }
+        .BuscadorM {
+          position: absolute;
+          top: 31%;
+          left: 3%;
+          color: #575757;
+        }
+      }
+
+      .logos,
+      .mensaje {
+        margin-left: 1rem;
+        color: #575757;
+      }
+    }
+  }
+}

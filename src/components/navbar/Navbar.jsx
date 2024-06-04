@@ -1,3 +1,4 @@
+import { Movil } from "./Movil";
 import { Navegacion } from "./Navegacion";
 import "./navbar.scss";
 
@@ -44,6 +45,7 @@ export const Navbar = () => {
           </svg>
         </div>
         <Navegacion />
+        <Movil />
       </nav>
     </header>
   );
