@@ -140,3 +140,9 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .ulNav .liNav {
+    width: 3rem;
+  }
+}

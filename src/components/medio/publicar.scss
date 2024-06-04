@@ -217,3 +217,14 @@
     }
   }
 }
+
+
+@media screen and (max-width: 600px) {  
+  .lineaSeparadora .hrSepara{
+    width: 67.3%;
+  }
+
+  .buscadorContainer .escribir .inputEscribir {
+    width: 75%;
+  }
+}

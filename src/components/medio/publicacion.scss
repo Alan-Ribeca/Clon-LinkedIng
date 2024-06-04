@@ -226,3 +226,19 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {  
+  .publicacionContainer {
+    .publiTop .infoPersonal {
+      width: 504px;
+    }
+
+    .detalles .mg {
+      width: 13.10rem;
+    }
+
+    .abajo .btnReaccion .textoBtn {
+      display: none;
+    }
+  } 
+}

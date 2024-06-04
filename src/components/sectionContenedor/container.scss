@@ -87,3 +87,9 @@
     gap: 0.9rem;
   }
 }
+
+@media screen and (max-width: 600px) { 
+  .containerGrid {
+    grid-template-columns: 450px;
+  }
+}
