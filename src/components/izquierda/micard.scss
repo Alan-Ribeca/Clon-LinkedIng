@@ -209,3 +209,9 @@
     }
   }
 }
+
+@media screen and (max-width: 428px) { 
+  .contenedorGeneral {
+    display: none;
+  }
+}

@@ -143,3 +143,13 @@
     }
   }
 }
+
+@media screen and (max-width: 428px) { 
+  .containerGrid {
+    grid-template-columns: 100%;
+  }
+
+  .liMovil .containerLiMovil .liNav {
+    font-size: 12px;
+  }
+}

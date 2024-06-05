@@ -228,3 +228,9 @@
     width: 75%;
   }
 }
+
+@media screen and (max-width: 428px) { 
+  .containerMid {
+    display: none;
+  }
+}

@@ -227,18 +227,96 @@
   }
 }
 
-@media screen and (max-width: 600px) {  
+@media screen and (max-width: 600px) {
   .publicacionContainer {
     .publiTop .infoPersonal {
       width: 504px;
     }
 
     .detalles .mg {
-      width: 13.10rem;
+      width: 13.1rem;
     }
 
     .abajo .btnReaccion .textoBtn {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .publicacionContainer {
+    border-radius: 0px;
+    margin-bottom: 0.7rem;
+
+    .detalles .mg {
+      width: 11.1rem;
+    }
+
+    .publiTop {
+      .infoPersonal {
+        width: 493px;
+      }
+
+      .delete {
+        margin-left: 5px;
+      }
+    }
+    .hrAbajo {
+      width: 91.5%;
+    }
+
+    .abajo {
+      margin-top: 0.3rem;
+      .btnReaccion {
+        flex-direction: column;
+        margin: 0px;
+
+        .textoBtn {
+          display: block;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .publicacionContainer {
+    .publiTop .infoPersonal .descripcion {
+      width: 14.43rem;
+    }
+    .hrAbajo {
+      width: 92.5%;
+    }
+    .detalles .mg {
+      width: 10.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .publicacionContainer {
+    .publiTop .infoPersonal {
+      width: 443px;
+    }
+    .detalles .mg {
+      width: 8.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .publicacionContainer {
+
+    .publiTop .infoPersonal {
+      width: 416px;
+      .descripcion {
+        width: 13rem;
+      }
+    } 
+
+    .detalles .mg {
+      width: 6.5rem;
     }
   } 
 }
