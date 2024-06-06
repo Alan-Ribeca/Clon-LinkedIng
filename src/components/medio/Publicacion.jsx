@@ -161,10 +161,12 @@ export const Publicacion = () => {
                   </svg>
                   <span className="numero">{mg}</span>
                 </span>
-                <span className="spanButtom comentario">{comentario}</span>
-                <span className="spanButtom compartido">{compartido}</span>
+                <div className="detallesCom">
+                  <span className="spanButtom comentario">{comentario}</span>
+                  <span className="spanButtom compartido">{compartido}</span>
+                </div>
               </div>
-              <hr className="hrAbajo" />
+              {/* <hr className="hrAbajo" /> */}
               <div className="abajo">
                 <button className="btnReaccion">
                   <svg

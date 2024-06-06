@@ -87,13 +87,13 @@
   .detalles {
     margin-top: 2px;
     display: flex;
-    width: 33.75rem;
+    width: 94%;
     height: 35px;
+    border-bottom: 1px solid rgb(140, 140, 140, 0.2);
+    margin-left: 0.7rem;
     .mg {
       display: flex;
       align-items: center;
-      margin-left: 0.93rem;
-      width: 19.12rem;
       height: 100%;
 
       .numero {
@@ -108,34 +108,40 @@
       }
     }
 
-    .spanButtom {
-      font-size: 0.75rem;
+    .detallesCom {
       display: flex;
-      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
 
-      &.comentario {
-        margin-right: 0.3rem;
+      .spanButtom {
+        font-size: 0.75rem;
+        display: flex;
+        align-items: center;
 
-        &::after {
-          content: "\00b7";
-          font-size: 1.2rem;
-          color: rgb(0, 0, 0, 0.6);
-          font-weight: 700;
-          margin-left: 0.3rem;
+        &.comentario {
+          margin-right: 0.3rem;
+
+          &::after {
+            content: "\00b7";
+            font-size: 1.2rem;
+            color: rgb(0, 0, 0, 0.6);
+            font-weight: 700;
+            margin-left: 0.3rem;
+          }
         }
-      }
 
-      &:hover {
-        cursor: pointer;
-        color: #0a66c2;
+        &:hover {
+          cursor: pointer;
+          color: #0a66c2;
+        }
       }
     }
   }
 
   .hrAbajo {
-    width: 93%;
+    width: 94%;
     position: absolute;
-    left: 3%;
+    margin-left: 0.93rem;
     border-color: rgba(223, 223, 223, 0.3);
   }
 
@@ -189,14 +195,6 @@
     }
     .titlePublic {
       width: 90%;
-    }
-
-    .detalles {
-      width: 100%;
-
-      .mg {
-        width: 9.12rem;
-      }
     }
 
     .abajo .btnReaccion .textoBtn {
@@ -271,9 +269,15 @@
         flex-direction: column;
         margin: 0px;
 
+        svg {
+          width: 22px;
+          height: 22px;
+        }
+
         .textoBtn {
           display: block;
-          font-size: 12px;
+          font-size: 11px;
+          margin-top: -5px;
         }
       }
     }
@@ -307,16 +311,15 @@
 
 @media screen and (max-width: 395px) {
   .publicacionContainer {
-
     .publiTop .infoPersonal {
-      width: 416px;
+      width: 449px;
       .descripcion {
         width: 13rem;
       }
-    } 
+    }
 
     .detalles .mg {
       width: 6.5rem;
     }
-  } 
+  }
 }
