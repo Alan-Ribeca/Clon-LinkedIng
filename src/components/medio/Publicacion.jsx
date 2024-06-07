@@ -2,7 +2,7 @@ import "./publicacion.scss";
 export const Publicacion = () => {
   const publicaciones = [
     {
-      img: "./img/public5.jpeg",
+      img: "./img/public5Perf.jpeg",
       nombre: "Miguel Ángel Durán García",
       descripcion:
         "Programación JavaScript y Desarrollo Web. Reconocido Google Developer Expert, Microsoft MVP y GitHub Star. ⭐",
@@ -17,7 +17,7 @@ export const Publicacion = () => {
       id: 5,
     },
     {
-      img: "./img/public5.jpeg",
+      img: "./img/EducacionIT.jpg",
       nombre: "EducacionIT",
       descripcion: "163.661 segudores",
       hora: "5 días",
@@ -31,7 +31,7 @@ export const Publicacion = () => {
       id: 2,
     },
     {
-      img: "./img/public5.jpeg",
+      img: "./img/public1Perf.jpeg",
       nombre: "Jorge Baumann",
       descripcion: "Software Engineer | Creador de contenido",
       hora: "10 horas",
@@ -43,7 +43,7 @@ export const Publicacion = () => {
       id: 1,
     },
     {
-      img: "./img/public5.jpeg",
+      img: "./img/public3Perf.jpeg",
       nombre: "Codigo Facilito",
       descripcion: "56.200 segudores",
       hora: "10 horas",
@@ -55,7 +55,7 @@ export const Publicacion = () => {
       id: 3,
     },
     {
-      img: "./img/public5.jpeg",
+      img: "./img/public4Perf.jpeg",
       nombre: "freeCodeCamp",
       descripcion: "1.556.200 segudores",
       hora: "19 horas",
