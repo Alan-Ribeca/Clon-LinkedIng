@@ -17,7 +17,7 @@ export const Navegacion = () => {
           >
             <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
           </svg>
-          <span className="nombreLogo">Inicio</span>
+          <span className="nombreLogo inicio">Inicio</span>
         </li>
         <li className="liNav">
           <svg

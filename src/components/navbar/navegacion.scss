@@ -19,8 +19,6 @@
     cursor: pointer;
 
     &:hover {
-      color: black;
-
       .logos path,
       .flechaAvatar path {
         fill: #000000e6;
@@ -28,6 +26,10 @@
 
       .divAvatar,
       .divNegocio {
+        color: black;
+      }
+
+      .nombreLogo {
         color: black;
       }
     }
@@ -59,6 +61,12 @@
         fill: #000000e6;
       }
     }
+
+    .nombreLogo {
+      &.inicio {
+        color: black;
+      }
+    } 
   }
 
   .negocio {

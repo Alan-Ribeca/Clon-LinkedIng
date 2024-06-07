@@ -228,15 +228,33 @@
 @media screen and (max-width: 600px) {
   .publicacionContainer {
     .publiTop .infoPersonal {
-      width: 504px;
+      width: 496px;
     }
 
-    .detalles .mg {
-      width: 13.1rem;
+    .detalles {
+      width: 91%;
+      margin-left: 1rem;
+      .mg {
+        width: 13.1rem;
+      }
     }
 
-    .abajo .btnReaccion .textoBtn {
-      display: none;
+    .abajo {
+      .btnReaccion {
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 0.4rem;
+        svg {
+          width: 22px;
+          height: 22px;
+        }
+
+        .textoBtn {
+          display: block;
+          font-size: 11px;
+          margin-top: -5px;
+        }
+      }
     }
   }
 }
@@ -252,7 +270,7 @@
 
     .publiTop {
       .infoPersonal {
-        width: 493px;
+        width: 477px;
       }
 
       .delete {
@@ -265,21 +283,6 @@
 
     .abajo {
       margin-top: 0.3rem;
-      .btnReaccion {
-        flex-direction: column;
-        margin: 0px;
-
-        svg {
-          width: 22px;
-          height: 22px;
-        }
-
-        .textoBtn {
-          display: block;
-          font-size: 11px;
-          margin-top: -5px;
-        }
-      }
     }
   }
 }
