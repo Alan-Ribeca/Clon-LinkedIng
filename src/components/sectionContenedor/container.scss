@@ -66,6 +66,10 @@
     }
   }
 }
+
+.liMovil {
+  display: none;
+}
 @media screen and (max-width: 1199px) {
   .containerGrid {
     grid-template-columns: 225px 387px 300px;
@@ -98,6 +102,7 @@
   }
 
   .liMovil {
+    display: block;
     height: 4rem;
     background-color: white;
     position: sticky;
@@ -122,7 +127,6 @@
 
         &.home {
           border-top: 2px solid black;
-
         }
 
         .nombreLogo {
@@ -144,7 +148,7 @@
   }
 }
 
-@media screen and (max-width: 428px) { 
+@media screen and (max-width: 428px) {
   .containerGrid {
     grid-template-columns: 100%;
   }

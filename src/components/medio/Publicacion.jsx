@@ -1,5 +1,4 @@
 import "./publicacion.scss";
-
 export const Publicacion = () => {
   const publicaciones = [
     {
@@ -26,9 +25,9 @@ export const Publicacion = () => {
       Inscríbete gratis ingresando al siguiente link: https://lnkd.in/dSYZngvS
       ¡Te esperamos! 🙌"`,
       imgPublicada: "./img/educationItImg.jpg",
-      mg: "13",
-      comentario: "",
-      compartido: "",
+      mg: "41",
+      comentario: "5 comentarios",
+      compartido: "1 veces compartido",
       id: 2,
     },
     {
@@ -38,9 +37,9 @@ export const Publicacion = () => {
       hora: "10 horas",
       titulo: "La confianza en la nube y en Google, ahora queda en duda.",
       imgPublicada: "./img/public1.jpeg",
-      mg: "13",
-      comentario: "",
-      compartido: "",
+      mg: "87",
+      comentario: "44 comentarios",
+      compartido: "12 veces compartido",
       id: 1,
     },
     {
@@ -50,9 +49,9 @@ export const Publicacion = () => {
       hora: "10 horas",
       titulo: "Quedan pocos días de la #FeriaDeCursosGratis 🎡",
       imgPublicada: "./img/public3.jpeg",
-      mg: "13",
-      comentario: "",
-      compartido: "",
+      mg: "113",
+      comentario: "8 comentarios",
+      compartido: "1 veces compartido",
       id: 3,
     },
     {
@@ -63,9 +62,9 @@ export const Publicacion = () => {
       titulo:
         "CSS Flexbox is a powerful tool that can help you create appealing and responsive webpage layouts.",
       imgPublicada: "./img/public4.jpeg",
-      mg: "13",
-      comentario: "",
-      compartido: "",
+      mg: "66",
+      comentario: "4 comentarios",
+      compartido: "33 veces compartido",
       id: 4,
     },
   ];
