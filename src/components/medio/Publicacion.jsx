@@ -93,7 +93,7 @@ export const Publicacion = () => {
               />
               <div className="infoPersonal">
                 <h3 className="name">{nombre}</h3>
-                <spanp className="descripcion">{descripcion}</spanp>
+                <span className="descripcion">{descripcion}</span>
                 <span className="hora">{hora}</span>
               </div>
               <svg
