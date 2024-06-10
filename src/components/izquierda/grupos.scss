@@ -36,9 +36,9 @@
         cursor: pointer;
         color: rgb(0, 0, 0, 0.9);
         background-color: rgba(0, 0, 0, 0.08);
-        margin-left: -0.75rem; 
-        padding-left:  0.75rem; 
-        width: calc(94.2% + 12px); 
+        margin-left: -0.75rem;
+        padding-left: 0.75rem;
+        width: calc(94.2% + 12px);
       }
       .sgvGrupo {
         margin-right: 0.5rem;
@@ -54,6 +54,11 @@
       margin-bottom: 3px;
       color: #0a66c2;
       font-weight: 600;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
 
     .ulRecientes {
@@ -125,11 +130,6 @@
     justify-content: center;
     border-top: 1px solid rgba(140, 140, 140, 0.2);
 
-    &:hover {
-      cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.08);
-    }
-
     .mas {
       width: 100%;
       height: 100%;
@@ -139,12 +139,16 @@
       font-weight: 600;
       color: rgb(0, 0, 0, 0.75);
       padding-bottom: 0.125rem;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.08);
+      }
     }
   }
 }
 
-
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
   .cardGrupos {
     display: none;
   }
