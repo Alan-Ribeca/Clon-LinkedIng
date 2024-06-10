@@ -3,6 +3,7 @@
   align-items: center;
   list-style: none;
   padding: 0;
+  position: relative;
 
   .liNav {
     display: flex;
@@ -31,6 +32,10 @@
 
       .nombreLogo {
         color: black;
+      }
+
+      &.yo {
+        position: relative;
       }
     }
 
