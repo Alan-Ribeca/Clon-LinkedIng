@@ -136,16 +136,41 @@ export const Navegacion = () => {
         </li>
         <li className="premium">Obten Premium durante un mes, gratis</li>
         {isVisible && (
-          <div className="divVisible">
+          <section className="divVisible">
+            <div className="personal">
+              <img src="./img/avatare.jpg" alt="img de perfil" className="imgPersonal"/>
+              <div className="info">
+                <h3 className="nombre">Alan Ribeca</h3>
+                <p className="habilidades">Desarrollardor web -- Front End | HTML5 | CSS | JavaScript | React...</p>
+              </div>
+            </div>
+              <button className="btnPerfil">Ver perfil</button>
             <ul className="listaVisible">
-              <p className="title">cuenta</p>
+              <p className="title">Cuenta</p>
               <p className="probarPremium">
+                <span className="svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+                      fill="#f8c77e"
+                    ></path>
+                    <path
+                      d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+                      fill="#e7a33e"
+                    ></path>
+                  </svg>
+                </span>
                 Prueba un mes de premium por 0 AR$
               </p>
               <li className="liVisi">Ajustes y privacidad</li>
               <li className="liVisi">Ayuda</li>
               <li className="liVisi">Idioma</li>
-              <li className="liVisi">
+              <li className="liVisi btn">
                 <span>Modo oscuro</span>
                 <div className="toggle-container">
                   <input type="checkbox" className="toggle-input" />
@@ -216,12 +241,12 @@ export const Navegacion = () => {
                   </svg>
                 </div>
               </li>
-              <p className="title">Gestionar</p>
+              <p className="title gestion">Gestionar</p>
               <li className="liVisi">Publicaciones y actividad</li>
               <li className="liVisi">Cuenta de anuncios de empleo</li>
               <li className="liVisi">Cerrar sesion</li>
             </ul>
-          </div>
+          </section>
         )}
       </ul>
     </>

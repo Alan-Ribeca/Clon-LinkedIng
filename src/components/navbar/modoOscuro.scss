@@ -1,13 +1,112 @@
 .divVisible {
   position: absolute;
-  bottom: -18rem;
+  bottom: -27.4rem;
   right: 34%;
-  background-color: red;
+  background-color: rgb(254, 254, 254);
   z-index: 1;
+  border-radius: 7px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 19rem;
+
+  .personal {
+    display: flex;
+    padding: 0.5rem;
+    .imgPersonal {
+      width: 50px;
+      height: 50px;
+    }
+
+    .info {
+      padding: 0 0.6rem;
+      width: 68%;
+      .nombre {
+        font-size: 16px;
+        color: #000000e6;
+        margin-bottom: 0.3rem;
+      }
+
+      .habilidades {
+        font-size: 14px;
+        font-weight: 400;
+        color: #000000e6;
+        width: 94%;
+      }
+    }
+  }
+
+  .btnPerfil {
+    border-radius: 20px;
+    height: 1.8rem;
+    width: 90%;
+    background-color: transparent;
+    border: 1px solid #0a66c2;
+    padding: 0;
+    color: #0a66c2;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 1rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #1869e328;
+    }
+  }
 
   .listaVisible {
     list-style: none;
+    padding: 0.4rem 1rem;
+    position: relative;
 
+    .title {
+      color: #000000e6;
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0.5rem 0 0.5rem 0;
+
+      &.gestion {
+        margin: 0.7rem 0 0.2rem 0;
+      }
+    }
+
+    .probarPremium {
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+
+      .svg {
+        padding-top: 0.2rem;
+        margin-right: 0.3rem;
+      }
+    }
+
+    .liVisi {
+      color: #0009;
+      font-size: 14px;
+      padding: 0.2rem 0.2rem 0.2rem 0;
+      cursor: pointer;
+
+      &.btn {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .toggle-container {
+          position: absolute;
+          right: 5%;
+        }
+      }
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: #0a66c2;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .divVisible {
+    left: 0%;
   }
 }
 
