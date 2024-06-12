@@ -7,7 +7,7 @@ export const Publicar = () => {
         <div className="escribir">
           <div className="img">
             <img
-              src="./img/avatare.jpg"
+              src="./img/avatare2.jpg"
               alt="foto de perfil del usuario"
               className="imgMia"
             />

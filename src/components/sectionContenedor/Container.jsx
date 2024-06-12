@@ -12,7 +12,7 @@ export const Container = () => {
         <Derecha />
         <section className="mensaje">
           <div className="imgMensaje">
-            <img src="./img/avatare.jpg" alt="img de perfil del usuario" />
+            <img src="./img/avatare2.jpg" alt="img de perfil del usuario" />
             <p className="pMensaje">Mensajes</p>
           </div>
           <div className="logos">

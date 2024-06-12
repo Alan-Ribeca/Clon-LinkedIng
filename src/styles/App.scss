@@ -43,6 +43,7 @@
             .flechaAvatar path {
               fill: #ffffff;
             }
+            border-color: #ffffff;
           }
 
           &:hover {
@@ -160,6 +161,7 @@
 }
 
 .main {
+  //inicio derecha
   &.oscuroMain {
     background-color: #050505;
 
@@ -297,6 +299,215 @@
         &:hover {
           background-color: #2d333a;
           color: #ffffff;
+        }
+      }
+    }
+    //fin derecha
+
+    //inicio mid
+    .buscadorContainer {
+      background-color: #1d2226;
+
+      .escribir {
+        .inputEscribir {
+          background-color: transparent;
+          border-color: #2d333a;
+          &::placeholder {
+            color: #b0b3b8;
+          }
+        }
+      }
+
+      .contenido .ulcontenido .li strong {
+        color: #b0b3b8;
+      }
+    }
+
+    .lineaSeparadora {
+      .hrSepara {
+        border-color: rgba(140, 140, 140, 0.425);
+      }
+      .orden {
+        color: #b0b3b8;
+
+        strong {
+          color: #ffffff;
+
+          .flechita {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+
+    .publicacionContainer {
+      background-color: #1d2226;
+
+      .publiTop {
+        .infoPersonal {
+          .name {
+            color: #ffffff;
+          }
+          .descripcion,
+          .hora {
+            color: #b0b3b8;
+          }
+        }
+
+        .opciones {
+          color: #b0b3b8;
+
+          &:hover {
+            fill: #ffffff;
+          }
+        }
+
+        .delete {
+          fill: #b0b3b8;
+
+          &:hover {
+            fill: #ffffff;
+          }
+        }
+      }
+
+      .titlePublic {
+        color: #b0b3b8;
+      }
+
+      .detalles {
+        border-color: rgba(140, 140, 140, 0.342);
+
+        span {
+          color: #b0b3b8;
+        }
+
+        .detallesCom {
+          .spanButtom {
+            &.comentario {
+              &::after {
+                color: #b0b3b8;
+              }
+            }
+          }
+        }
+      }
+
+      .abajo .btnReaccion {
+        svg,
+        span {
+          fill: #b0b3b8;
+          color: #b0b3b8;
+        }
+
+        &:hover {
+          svg,
+          span {
+            fill: #ffffff;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    //fin mid
+
+    //inicio right
+    .containerSeguir {
+      background-color: #1d2226;
+
+      .titleContainer {
+        .title {
+          color: #ffffff;
+        }
+
+        .svg svg {
+          fill: #b0b3b8;
+        }
+      }
+
+      .seguir .info {
+        .nombre {
+          color: #ffffff;
+        }
+
+        .talento {
+          color: #b0b3b8;
+        }
+
+        .btnSeguir {
+          color: #b0b3b8;
+          border-color: #b0b3b8;
+        }
+      }
+
+      .recomendaciones {
+        color: #b0b3b8;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .footer .ulFooter .liFoo {
+      color: #b0b3b8;
+
+      &:hover {
+        color: #007fff;
+      }
+
+      .flechita {
+        color: #b0b3b8;
+      }
+    }
+    //fin rigth
+
+    //inicio mensaje
+    .containerGrid .mensaje {
+      background-color: #1d2226;
+
+      .imgMensaje .pMensaje {
+        color: #ffffff;
+      }
+
+      .logos ul .logosMsj .svgMensaje {
+        fill: #b0b3b8;
+
+        &:hover {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    .liMovil {
+      background-color: #1d2226;
+
+      .containerLiMovil .liNav {
+        &.home {
+          border-color: #ffffff;
+          .logos {
+            fill: #ffffff;
+          }
+
+          span {
+            color: #ffffff;
+          }
+        }
+        .logos {
+          fill: #b0b3b8;
+        }
+        span {
+          color: #b0b3b8;
+        }
+
+        &:hover {
+          .logos{
+            fill: #ffffff;
+          }
+          span {
+            color: #ffffff;
+          }
         }
       }
     }

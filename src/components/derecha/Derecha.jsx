@@ -5,20 +5,20 @@ export const Derecha = () => {
   const personas = [
     {
       id: 1,
-      img: "./img/avatare.jpg",
+      img: "./img/avatare2.jpg",
       nombre: "María González",
       talento: "IT Talent Acquisition | IT Recruiter en CFO Tech Latam 🚀",
     },
     {
       id: 2,
-      img: "./img/avatare.jpg",
+      img: "./img/avatare2.jpg",
       nombre: "Juan Martínez",
       talento:
         "Analista de selección en ADN-Recursos Humanos || RRHH, Recruiter || Talento de desarrollo web",
     },
     {
       id: 3,
-      img: "./img/avatare.jpg",
+      img: "./img/avatare2.jpg",
       nombre: "Devsafio - Sin Juniors No Hay Seniors",
       talento: "Empresa • Consultoría de estrategia",
     },
