@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (max-width: 428px) { 
+@media screen and (max-width: 428px) {
   .header {
     height: 45px;
     .navbar {
@@ -63,7 +63,60 @@
         .buscadorCelu .BuscadorM {
           top: 35%;
         }
-        
+      }
+    }
+  }
+}
+
+//modo oscuro
+.header {
+  &.oscuro {
+    .divVisible {
+      &.movil {
+        background-color: #2d333a;
+
+        .personal .info {
+          .nombre {
+            color: #ffffff;
+          }
+
+          .habilidades {
+            color: #b0b3b8;
+          }
+        }
+
+        .btnPerfil {
+          background-color: transparent;
+          border-color: #1868e3;
+          color: #1868e3;
+
+          &:hover {
+            background-color: #1868e329;
+            color: #b0b3b8;
+          }
+        }
+
+        .listaVisible {
+          .title {
+            color: #ffffff;
+          }
+
+          .probarPremium {
+            color: #b0b3b8;
+          }
+
+          .liVisi {
+            color: #b0b3b8;
+
+            span {
+              color: #b0b3b8;
+            }
+
+            &:hover {
+              text-decoration-color: #1868e3;
+            }
+          }
+        }
       }
     }
   }

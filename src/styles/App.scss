@@ -1,10 +1,160 @@
 * {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    p, span{
-        color: rgba(0, 0, 0, 0.6);
-    }
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  
+  p,
+  span {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+//modo oscuro
+.header {
+  &.oscuro {
+    background-color: #1d2226;
+
+    .navbar {
+      background-color: #1d2226;
+
+      .containerLogo .logo {
+        color: #ffffff;
+      }
+
+      .buscador {
+        .inputBuscador {
+          background-color: #2d333a;
+          color: #ffffff;
+
+          &::placeholder {
+            color: white;
+          }
+        }
+
+        .lupaBuscador {
+          color: white;
+        }
+      }
+
+      .ulNav {
+        .liNav {
+          &.home {
+            .logos path,
+            .flechaAvatar path {
+              fill: #ffffff;
+            }
+          }
+
+          &:hover {
+            .logos path,
+            .flechaAvatar path {
+              fill: #ffffff;
+            }
+
+            .nombreLogo {
+              color: #ffffff;
+            }
+          }
+          .nombreLogo {
+            color: #b0b3b8;
+            &.inicio {
+              color: rgb(255, 255, 255);
+            }
+          }
+
+          .logos {
+            color: #b0b3b8;
+          }
+        }
+
+        .flechaAvatar {
+          color: #b0b3b8;
+        }
+
+        .premium {
+          color: #c57807;
+
+          &:hover {
+            color: #fd9600;
+          }
+        }
+
+        .divVisible{
+          background-color: #2d333a;
+
+          .personal .info {
+            .nombre {
+              color: #ffffff;
+            }
+
+            .habilidades {
+              color: #b0b3b8;
+            }
+          }
+
+          .btnPerfil {
+            background-color: transparent;
+            border-color: #1868e3;
+            color: #1868e3;
+
+            &:hover {
+              background-color: #1868e329;
+              color: #b0b3b8;
+            }
+          }
+
+          .listaVisible {
+            .title {
+              color: #ffffff;
+            }
+
+            .probarPremium {
+              color: #b0b3b8;
+            }
+
+            .liVisi {
+              color: #b0b3b8;
+
+              span {
+                color: #b0b3b8;
+              }
+
+              &:hover {
+                text-decoration-color: #1868e3;
+              }
+            }
+          }
+        }
+      }
+
+      .lupaMovil {
+        color: #b0b3b8;
+
+        .buscarMovil {
+          color: #b0b3b8;
+        }
+      }
+
+      .containerMovil {
+        .buscadorCelu {
+          .inputBuscador {
+            background-color: #2d333a;
+            color: #ffffff;
+
+            &::placeholder {
+              color: white;
+            }
+          }
+
+          .BuscadorM {
+            color: #ffffff;
+          }
+        }
+
+        .mensaje {
+          color: #b0b3b8;
+        }
+      }
+    }
+  }
 }

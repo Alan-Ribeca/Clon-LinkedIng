@@ -1,8 +1,11 @@
 import "./movil.scss";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ClassContext } from "../../context/StateCompo";
 
 export const Movil = () => {
   const [isVisible, setIsVisible] = useState(false);
+
+  const { toggleClass } = useContext(ClassContext);
 
   function handleClick() {
     setIsVisible(!isVisible);
@@ -11,7 +14,7 @@ export const Movil = () => {
     <>
       <div className="containerMovil">
         <img
-          src="./img/avatare.jpg"
+          src="./img/avatare2.jpg"
           alt="foto de avatar predeterminada"
           className="imgAvatar"
           onClick={handleClick}
@@ -43,10 +46,10 @@ export const Movil = () => {
         </svg>
       </div>
       {isVisible && (
-        <section className="divVisible movil">
+        <section className="divVisible movil" >
           <div className="personal">
             <img
-              src="./img/avatare.jpg"
+              src="./img/avatare2.jpg"
               alt="img de perfil"
               className="imgPersonal"
             />
@@ -86,7 +89,7 @@ export const Movil = () => {
             <li className="liVisi">Idioma</li>
             <li className="liVisi btn">
               <span>Modo oscuro</span>
-              <div className="toggle-container">
+              <div className="toggle-container" onClick={toggleClass}>
                 <input type="checkbox" className="toggle-input" />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

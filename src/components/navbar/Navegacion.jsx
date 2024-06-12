@@ -92,7 +92,7 @@ export const Navegacion = () => {
         </li>
         <li className="liNav yo" onClick={handleClick}>
           <img
-            src="./img/avatare.jpg"
+            src="./img/avatare2.jpg"
             alt="foto de avatar predeterminada"
             className="imgAvatar"
           />
@@ -142,7 +142,7 @@ export const Navegacion = () => {
           <section className="divVisible">
             <div className="personal">
               <img
-                src="./img/avatare.jpg"
+                src="./img/avatare2.jpg"
                 alt="img de perfil"
                 className="imgPersonal"
               />

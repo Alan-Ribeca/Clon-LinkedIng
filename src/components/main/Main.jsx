@@ -6,7 +6,7 @@ import { useContext } from "react";
 export const Main = () => {
   const { active } = useContext(ClassContext);
   return (
-    <main  className={`main ${active ? "oscuro" : ""}`}>
+    <main  className={`main ${active ? "oscuroMain" : ""}`}>
         <Container />
     </main>
   )
