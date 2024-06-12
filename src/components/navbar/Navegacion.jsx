@@ -10,7 +10,7 @@ export const Navegacion = () => {
     setIsVisible(!isVisible);
   }
 
-  const { toggleClass } = useContext(ClassContext);
+  const { toggleClass, active } = useContext(ClassContext);
 
   return (
     <>
@@ -182,12 +182,20 @@ export const Navegacion = () => {
               <li className="liVisi">Idioma</li>
               <li className="liVisi btn">
                 <span>Modo oscuro</span>
-                <div className="toggle-container" onClick={toggleClass}>
-                  <input type="checkbox" className="toggle-input" />
+                <div
+                  className={`toggle-container ${active ? "toggled" : ""}`}
+                  onClick={toggleClass}
+                >
+                  <input
+                    type="checkbox"
+                    className="toggle-input"
+                    checked={active}
+                    readOnly
+                  />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 292 142"
-                    className="toggle"
+                    className={`toggle ${active ? "active" : ""}`}
                   >
                     <path
                       d="M71 142C31.7878 142 0 110.212 0 71C0 31.7878 31.7878 0 71 0C110.212 0 119 30 146 30C173 30 182 0 221 0C260 0 292 31.7878 292 71C292 110.212 260.212 142 221 142C181.788 142 173 112 146 112C119 112 110.212 142 71 142Z"
@@ -223,7 +231,9 @@ export const Navegacion = () => {
                         width="114"
                         y="14"
                         x="14"
-                        className="toggle-circle left"
+                        className={`toggle-circle left ${
+                          active ? "active" : ""
+                        }`}
                       />
                       <rect
                         fill="#fff"
@@ -232,7 +242,9 @@ export const Navegacion = () => {
                         width="114"
                         y="14"
                         x="164"
-                        className="toggle-circle right"
+                        className={`toggle-circle right ${
+                          active ? "active" : ""
+                        }`}
                       />
                     </g>
                     <filter id="goo">

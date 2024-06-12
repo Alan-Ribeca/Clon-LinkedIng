@@ -1,13 +1,20 @@
 /* eslint-disable react/prop-types */
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from "react";
 
 const ClassContext = createContext();
 
 const ClassProvider = ({ children }) => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(() => {
+    const estadoGuardado = localStorage.getItem("toggleState");
+    return estadoGuardado ? JSON.parse(estadoGuardado) : false;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("toggleState", JSON.stringify(active));
+  }, [active]);
 
   const toggleClass = () => {
-    setActive(!active);
+    setActive((estadoPrevio) => !estadoPrevio);
   };
 
   return (

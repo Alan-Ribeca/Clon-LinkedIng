@@ -165,7 +165,6 @@ export const Publicacion = () => {
                   <span className="spanButtom compartido">{compartido}</span>
                 </div>
               </div>
-              {/* <hr className="hrAbajo" /> */}
               <div className="abajo">
                 <button className="btnReaccion">
                   <svg

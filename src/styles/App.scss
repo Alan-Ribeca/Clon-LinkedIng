@@ -73,10 +73,10 @@
         }
 
         .premium {
-          color: #c57807;
+          color: #ff9800;
 
           &:hover {
-            color: #fd9600;
+            color: #fbab33;
           }
         }
 
@@ -312,6 +312,7 @@
         .inputEscribir {
           background-color: transparent;
           border-color: #2d333a;
+          color: white;
           &::placeholder {
             color: #b0b3b8;
           }
