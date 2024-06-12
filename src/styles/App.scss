@@ -79,7 +79,7 @@
           }
         }
 
-        .divVisible{
+        .divVisible {
           background-color: #2d333a;
 
           .personal .info {
@@ -153,6 +153,150 @@
 
         .mensaje {
           color: #b0b3b8;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  &.oscuroMain {
+    background-color: #050505;
+
+    .miCard {
+      background-color: #1d2226;
+
+      .containerImg {
+        .imgPersonal {
+          .nombre {
+            color: #ffffff;
+          }
+          .habilidades {
+            color: #b0b3b8;
+          }
+        }
+      }
+
+      .hrCard {
+        border-color: rgba(140, 140, 140, 0.2);
+      }
+
+      .containerSpan {
+        .visualizaciones {
+          color: #b0b3b8;
+
+          &:hover {
+            background-color: #2d333a;
+          }
+
+          span.derecha {
+            color: #007fff;
+          }
+        }
+      }
+
+      .premiumCard {
+        p {
+          color: #b0b3b8;
+        }
+
+        .probarPremium .probarPremiumTexto {
+          color: #b0b3b8;
+        }
+
+        &:hover {
+          background-color: #2d333a;
+        }
+      }
+
+      .guardadosContainer {
+        .guardados {
+          .svgGuardado {
+            path {
+              fill: #b0b3b8;
+            }
+          }
+          .guardadoTexto {
+            color: #b0b3b8;
+          }
+        }
+        &:hover {
+          background-color: #2d333a;
+        }
+      }
+    }
+
+    .cardGrupos {
+      background-color: #1d2226;
+
+      .recientes {
+        .titleRec {
+          color: #ffffff;
+        }
+        .liRec {
+          color: #b0b3b8;
+          .containerSvg {
+            .sgvGrupo {
+              fill: #b0b3b8;
+            }
+            &:hover {
+              color: #ffffff;
+              background-color: #2d333a;
+            }
+          }
+        }
+      }
+
+      .grupos {
+        .texGrup {
+          color: #007fff;
+        }
+
+        .liRec {
+          color: #b0b3b8;
+
+          .containerSvg {
+            .sgvGrupo {
+              fill: #b0b3b8;
+            }
+
+            &:hover {
+              color: #ffffff;
+              background-color: #2d333a;
+            }
+          }
+        }
+        p {
+          color: #b0b3b8;
+        }
+      }
+      .texMostarMas {
+        .flechaSvg .flechaMas {
+          fill: #b0b3b8;
+        }
+        &:hover {
+          color: #ffffff;
+
+          .flechaMas {
+            fill: #ffffff;
+          }
+        }
+      }
+
+      .eventos {
+        .texEvent {
+          color: #007fff;
+        }
+        .hastags {
+          color: #007fff;
+        }
+      }
+
+      .verMass .mas {
+        color: #b0b3b8;
+        &:hover {
+          background-color: #2d333a;
+          color: #ffffff;
         }
       }
     }
