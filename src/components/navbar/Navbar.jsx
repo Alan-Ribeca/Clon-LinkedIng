@@ -1,10 +1,13 @@
 import { Movil } from "./Movil";
 import { Navegacion } from "./Navegacion";
+import { ClassContext } from "../../context/StateCompo";
+import { useContext } from "react";
 import "./navbar.scss";
 
 export const Navbar = () => {
+  const { active } = useContext(ClassContext);
   return (
-    <header className="header">
+    <header className={`header ${active ? "oscuro" : ""}`}>
       <nav className="navbar">
         <div className="containerLogo">
           <svg

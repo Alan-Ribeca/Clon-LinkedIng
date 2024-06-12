@@ -1,6 +1,7 @@
 import "./navegacion.scss";
 import "./modoOscuro.scss";
-import { useState } from "react";
+import { ClassContext } from "../../context/StateCompo";
+import { useContext, useState } from "react";
 
 export const Navegacion = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,6 +9,8 @@ export const Navegacion = () => {
   function handleClick() {
     setIsVisible(!isVisible);
   }
+
+  const { toggleClass } = useContext(ClassContext);
 
   return (
     <>
@@ -138,13 +141,20 @@ export const Navegacion = () => {
         {isVisible && (
           <section className="divVisible">
             <div className="personal">
-              <img src="./img/avatare.jpg" alt="img de perfil" className="imgPersonal"/>
+              <img
+                src="./img/avatare.jpg"
+                alt="img de perfil"
+                className="imgPersonal"
+              />
               <div className="info">
                 <h3 className="nombre">Alan Ribeca</h3>
-                <p className="habilidades">Desarrollardor web -- Front End | HTML5 | CSS | JavaScript | React...</p>
+                <p className="habilidades">
+                  Desarrollardor web -- Front End | HTML5 | CSS | JavaScript |
+                  React...
+                </p>
               </div>
             </div>
-              <button className="btnPerfil">Ver perfil</button>
+            <button className="btnPerfil">Ver perfil</button>
             <ul className="listaVisible">
               <p className="title">Cuenta</p>
               <p className="probarPremium">
@@ -172,7 +182,7 @@ export const Navegacion = () => {
               <li className="liVisi">Idioma</li>
               <li className="liVisi btn">
                 <span>Modo oscuro</span>
-                <div className="toggle-container">
+                <div className="toggle-container" onClick={toggleClass}>
                   <input type="checkbox" className="toggle-input" />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
