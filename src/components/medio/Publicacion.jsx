@@ -1,6 +1,10 @@
 import "./publicacion.scss";
+import { useState } from "react";
+
 export const Publicacion = () => {
-  const publicaciones = [
+  const [clase, setClase] = useState(false);
+
+  const [post, setPost] = useState([
     {
       img: "./img/public5Perf.jpeg",
       nombre: "Miguel Ángel Durán García",
@@ -11,9 +15,10 @@ export const Publicacion = () => {
         JavaScript, Python, Go, Java, Kotlin, PHP y más:
         → https://lnkd.in/eyqr2_H9`,
       imgPublicada: "./img/public5.jpeg",
-      mg: "1358",
+      mg: 158,
       comentario: "26 comentarios",
       compartido: "311 veces compartido",
+      liked: false,
       id: 5,
     },
     {
@@ -25,9 +30,10 @@ export const Publicacion = () => {
       Inscríbete gratis ingresando al siguiente link: https://lnkd.in/dSYZngvS
       ¡Te esperamos! 🙌"`,
       imgPublicada: "./img/educationItImg.jpg",
-      mg: "41",
+      mg: 41,
       comentario: "5 comentarios",
       compartido: "1 veces compartido",
+      liked: false,
       id: 2,
     },
     {
@@ -37,7 +43,7 @@ export const Publicacion = () => {
       hora: "10 horas",
       titulo: "La confianza en la nube y en Google, ahora queda en duda.",
       imgPublicada: "./img/public1.jpeg",
-      mg: "87",
+      mg: 87,
       comentario: "44 comentarios",
       compartido: "12 veces compartido",
       id: 1,
@@ -49,9 +55,10 @@ export const Publicacion = () => {
       hora: "10 horas",
       titulo: "Quedan pocos días de la #FeriaDeCursosGratis 🎡",
       imgPublicada: "./img/public3.jpeg",
-      mg: "113",
+      mg: 213,
       comentario: "8 comentarios",
       compartido: "1 veces compartido",
+      liked: false,
       id: 3,
     },
     {
@@ -62,15 +69,33 @@ export const Publicacion = () => {
       titulo:
         "CSS Flexbox is a powerful tool that can help you create appealing and responsive webpage layouts.",
       imgPublicada: "./img/public4.jpeg",
-      mg: "66",
+      mg: 66,
       comentario: "4 comentarios",
       compartido: "33 veces compartido",
+      liked: false,
       id: 4,
     },
-  ];
+  ]);
+
+  const handleLike = (postId) => {
+    setPost(
+      post.map((post) => {
+        if (post.id === postId) {
+          return {
+            ...post,
+            mg: post.liked ? post.mg - 1 : post.mg + 1,
+            liked: !post.liked,
+          };
+        }
+        setClase(!clase);
+        return post;
+      })
+    );
+  };
+
   return (
     <>
-      {publicaciones.map(
+      {post.map(
         ({
           img,
           nombre,
@@ -158,7 +183,9 @@ export const Publicacion = () => {
                       />
                     </g>
                   </svg>
-                  <span className="numero">{mg}</span>
+                  <span className={`numero ${post.liked ? "like" : ""}`}>
+                    {mg}
+                  </span>
                 </span>
                 <div className="detallesCom">
                   <span className="spanButtom comentario">{comentario}</span>
@@ -166,7 +193,10 @@ export const Publicacion = () => {
                 </div>
               </div>
               <div className="abajo">
-                <button className="btnReaccion">
+                <button
+                  className={`btnReaccion ${clase ? "likeado" : ""}`}
+                  onClick={() => handleLike(id)}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"

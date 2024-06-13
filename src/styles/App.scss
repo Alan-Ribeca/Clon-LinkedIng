@@ -8,7 +8,6 @@
     color: rgba(0, 0, 0, 0.6);
   }
 }
-
 //modo oscuro
 .header {
   &.oscuro {
@@ -406,6 +405,17 @@
           span {
             fill: #ffffff;
             color: #ffffff;
+          }
+        }
+
+        &.likeado {
+          svg {
+            fill: #007fff;
+            color: #007fff;
+          }
+
+          span {
+            color: #007fff;
           }
         }
       }
