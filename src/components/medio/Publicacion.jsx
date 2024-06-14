@@ -2,7 +2,7 @@ import "./publicacion.scss";
 import { useState } from "react";
 
 export const Publicacion = () => {
-  const [clase, setClase] = useState(false);
+
 
   const [post, setPost] = useState([
     {
@@ -20,6 +20,20 @@ export const Publicacion = () => {
       compartido: "311 veces compartido",
       liked: false,
       id: 5,
+    },
+    {
+      img: "./img/public6Perf.jpeg",
+      nombre: "Brais Moure",
+      descripcion: "Freelance full-stack Dev | iOS &amp; Android Engineer | Divulgador sobre programación de Apps",
+      hora: "23 horas",
+      titulo:
+        "Un framework de código abierto para crear UI Web con PYTHON y componentes de ANGULAR.",
+      imgPublicada: "./img/public6.jpeg",
+      mg: 220,
+      comentario: "1 comentarios",
+      compartido: "4 veces compartido",
+      liked: false,
+      id: 6,
     },
     {
       img: "./img/EducacionIT.jpg",
@@ -75,6 +89,20 @@ export const Publicacion = () => {
       liked: false,
       id: 4,
     },
+    {
+      img: "./img/public5Perf.jpg",
+      nombre: "Abraham John",
+      descripcion: "UI/UX Design | Visual design, Prototype, User research | I Help e-commerce",
+      hora: "7 horas",
+      titulo:
+        "Diseñadores de UI/UX, aquí hay tipos de pestañas que deben conocer al diseñar su próximo proyecto de diseño de UI.",
+      imgPublicada: "./img/public5.jpg",
+      mg: 23,
+      comentario: "1 comentarios",
+      compartido: "4 veces compartido",
+      liked: false,
+      id: 5,
+    },
   ]);
 
   const handleLike = (postId) => {
@@ -87,7 +115,7 @@ export const Publicacion = () => {
             liked: !post.liked,
           };
         }
-        setClase(!clase);
+
         return post;
       })
     );
@@ -108,6 +136,7 @@ export const Publicacion = () => {
           comentario,
           compartido,
           id,
+          liked,
         }) => (
           <div key={id} className="publicacionContainer">
             <div className="publiTop">
@@ -194,7 +223,7 @@ export const Publicacion = () => {
               </div>
               <div className="abajo">
                 <button
-                  className={`btnReaccion ${clase ? "likeado" : ""}`}
+                  className={`btnReaccion ${liked ? "likeado" : ""}`}
                   onClick={() => handleLike(id)}
                 >
                   <svg
