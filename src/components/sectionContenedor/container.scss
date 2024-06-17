@@ -9,64 +9,119 @@
   gap: 1.5rem;
   position: relative;
 
-  .mensaje {
+  .containerMsj {
     position: fixed;
     bottom: 0%;
     right: 0.4%;
-    display: flex;
-    height: 48.7px;
-    width: 18rem;
-    background-color: white;
-    border-radius: 8px 8px 0 0;
-    overflow: hidden;
     box-shadow: 0px 0px 0px 1px rgba(140, 140, 140, 0.2);
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    background-color: white;
 
-    .imgMensaje {
+    .mensaje {
       display: flex;
-      align-items: center;
-      margin: 0px 4px;
-      padding: 4px;
-      width: 41%;
+      height: 48.7px;
+      width: 18rem;
+      border-bottom: 1px solid rgba(140, 140, 140, 0.2);
 
-      img {
-        width: 32px;
-        height: 32px;
-      }
-      .pMensaje {
-        padding-left: 0.48rem;
-        color: #000000e6;
-        font-size: 0.875rem;
-        font-weight: 600;
-      }
-    }
-
-    .logos {
-      display: flex;
-      align-items: center;
-      width: 54%;
-      ul {
+      .imgMensaje {
         display: flex;
-        width: 100%;
-        padding-left: 3.625rem;
+        align-items: center;
+        margin: 0px 4px;
+        padding: 4px;
+        width: 41%;
 
-        .logosMsj {
-          width: 100%;
-          list-style: none;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+        .pMensaje {
+          padding-left: 0.48rem;
+          color: #000000e6;
+          font-size: 0.875rem;
+          font-weight: 600;
+        }
+      }
+
+      .logos {
+        display: flex;
+        align-items: center;
+        width: 54%;
+        ul {
           display: flex;
-          height: 100%;
+          width: 100%;
+          padding-left: 3.625rem;
 
-          &:hover {
-            cursor: pointer;
-          }
-          .svgMensaje {
-            fill: rgba(0, 0, 0, 0.719);
+          .logosMsj {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            height: 100%;
+
+            &:hover {
+              cursor: pointer;
+            }
+            .svgMensaje {
+              fill: rgba(0, 0, 0, 0.719);
+            }
           }
         }
       }
     }
-
     &.espandido {
-      height: 100px;
+      height: 89.6%;
+      background-color: white;
+
+      .mensaje {
+        height: 46.4px;
+      }
+
+      .logos ul {
+        padding-left: 2.95rem;
+        margin-right: 0.5rem;
+      }
+
+      .logosMsj {
+        justify-content: center;
+        width: 31%;
+      }
+      .flecha {
+        transform: rotate(180deg);
+      }
+
+      .containerInput {
+        position: relative;
+
+        .lupa {
+          width: 16px;
+          height: 16px;
+          fill: rgba(0, 0, 0, 0.6);
+          position: absolute;
+          top: 41%;
+          left: 8.2%;
+        }
+
+        .input {
+          margin: 0 12px;
+          width: 230px;
+          height: 1.9rem;
+          margin-top: 0.5rem;
+          border: none;
+          border-radius: 4px;
+          background-color: #edf3f8;
+          padding-left: 1.97rem;
+          font-size: 14px;
+        }
+
+        .menu {
+          width: 16px;
+          height: 16px;
+          fill: rgba(0, 0, 0, 0.6);
+          position: absolute;
+          top: 42%;
+          right: 8.5%;
+        }
+      }
     }
   }
 }

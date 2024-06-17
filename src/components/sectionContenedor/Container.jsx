@@ -19,54 +19,86 @@ export const Container = () => {
         <MiCard />
         <Medio />
         <Derecha />
-        <section className={`mensaje ${mensajeEspandido ? "espandido" : ""}`}>
-          <div className="imgMensaje">
-            <img src="./img/avatare2.jpg" alt="img de perfil del usuario" />
-            <p className="pMensaje">Mensajes</p>
+        <section
+          className={`containerMsj ${mensajeEspandido ? "espandido" : ""}`}
+        >
+          <div className="mensaje">
+            <div className="imgMensaje">
+              <img src="./img/avatare2.jpg" alt="img de perfil del usuario" />
+              <p className="pMensaje">Mensajes</p>
+            </div>
+            <div className="logos">
+              <ul>
+                <li className="logosMsj">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                    className="svgMensaje"
+                    fill="currentColor"
+                  >
+                    <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
+                  </svg>
+                </li>
+                <li className="logosMsj">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="svgMensaje"
+                  >
+                    <path d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"></path>
+                  </svg>
+                </li>
+                <li className="logosMsj flecha">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="svgMensaje"
+                    onClick={handleEspandido}
+                  >
+                    <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
+                  </svg>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="logos">
-            <ul>
-              <li className="logosMsj">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  height="16"
-                  className="svgMensaje"
-                  fill="currentColor"
-                >
-                  <path d="M3 9.5A1.5 1.5 0 114.5 8 1.5 1.5 0 013 9.5zM11.5 8A1.5 1.5 0 1013 6.5 1.5 1.5 0 0011.5 8zm-5 0A1.5 1.5 0 108 6.5 1.5 1.5 0 006.5 8z"></path>
-                </svg>
-              </li>
-              <li className="logosMsj">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="svgMensaje"
-                >
-                  <path d="M15 2.53a1.51 1.51 0 01-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0115 2.53zM12 11a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h3V2H5a3 3 0 00-3 3v6a3 3 0 003 3h6a3 3 0 003-3V8h-2z"></path>
-                </svg>
-              </li>
-              <li className="logosMsj">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="svgMensaje"
-                  onClick={handleEspandido}
-                >
-                  <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
-                </svg>
-              </li>
-            </ul>
-          </div>
+          {mensajeEspandido && (
+            <div className="containerInput">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                id="search-small"
+                aria-hidden="true"
+                role="none"
+                data-supported-dps="16x16"
+                fill="currentColor"
+                className="lupa"
+              >
+                <path d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"></path>
+              </svg>
+              <input type="text" placeholder="Buscar mensajes" className="input"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                id="filter-small"
+                aria-hidden="true"
+                role="none"
+                data-supported-dps="16x16"
+                fill="currentColor"
+                className="menu"
+              >
+                <path d="M15 4H6.72a1.98 1.98 0 01-3.44 0H1V2h2.28a1.98 1.98 0 013.44 0H15v2zm0 8H6.72a1.98 1.98 0 00-3.44 0H1v2h2.28a1.98 1.98 0 003.44 0H15v-2zm0-5h-2.28a1.98 1.98 0 00-3.44 0H1v2h8.28a1.98 1.98 0 003.44 0H15V7z"></path>
+              </svg>
+            </div>
+          )}
         </section>
-
       </section>
       <section className="liMovil">
         <ul className="containerLiMovil">
