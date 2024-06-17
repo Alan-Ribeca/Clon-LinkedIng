@@ -101,7 +101,7 @@ export const Publicacion = () => {
       comentario: "1 comentarios",
       compartido: "4 veces compartido",
       liked: false,
-      id: 5,
+      id: 7,
     },
   ]);
 

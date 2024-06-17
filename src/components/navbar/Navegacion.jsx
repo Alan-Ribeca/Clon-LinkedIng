@@ -10,7 +10,7 @@ export const Navegacion = () => {
     setIsVisible(!isVisible);
   }
 
-  const { toggleClass, active } = useContext(ClassContext);
+  const { toggleClass, active, handleNotifications } = useContext(ClassContext);
 
   return (
     <>
@@ -30,7 +30,7 @@ export const Navegacion = () => {
           </svg>
           <span className="nombreLogo inicio">Inicio</span>
         </li>
-        <li className="liNav">
+        <li className="liNav" onClick={handleNotifications}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -45,7 +45,7 @@ export const Navegacion = () => {
           </svg>
           <span className="nombreLogo">Mi red</span>
         </li>
-        <li className="liNav">
+        <li className="liNav" onClick={handleNotifications}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -60,7 +60,7 @@ export const Navegacion = () => {
           </svg>
           <span className="nombreLogo">Empleos</span>
         </li>
-        <li className="liNav">
+        <li className="liNav" onClick={handleNotifications}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -75,7 +75,7 @@ export const Navegacion = () => {
           </svg>
           <span className="nombreLogo">Mensajes</span>
         </li>
-        <li className="liNav">
+        <li className="liNav" onClick={handleNotifications}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -110,7 +110,7 @@ export const Navegacion = () => {
             </svg>
           </div>
         </li>
-        <li className="liNav negocio">
+        <li className="liNav negocio" onClick={handleNotifications}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -137,7 +137,9 @@ export const Navegacion = () => {
             </svg>
           </div>
         </li>
-        <li className="premium">Obten Premium durante un mes, gratis</li>
+        <li className="premium" onClick={handleNotifications}>
+          Obten Premium durante un mes, gratis
+        </li>
         {isVisible && (
           <section className="divVisible">
             <div className="personal">

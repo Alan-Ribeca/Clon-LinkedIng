@@ -1,16 +1,25 @@
 import { MiCard } from "../izquierda/MiCard";
 import { Medio } from "../medio/Medio";
 import { Derecha } from "../derecha/Derecha";
+import { ClassContext } from "../../context/StateCompo";
+import { useContext, useState } from "react";
 import "./container.scss";
 
 export const Container = () => {
+  const { handleNotifications } = useContext(ClassContext);
+
+  const [mensajeEspandido, setMensajeEspandido] = useState();
+
+  const handleEspandido = () => {
+    setMensajeEspandido(!mensajeEspandido);
+  };
   return (
     <>
       <section className="containerGrid">
         <MiCard />
         <Medio />
         <Derecha />
-        <section className="mensaje">
+        <section className={`mensaje ${mensajeEspandido ? "espandido" : ""}`}>
           <div className="imgMensaje">
             <img src="./img/avatare2.jpg" alt="img de perfil del usuario" />
             <p className="pMensaje">Mensajes</p>
@@ -49,6 +58,7 @@ export const Container = () => {
                   height="16"
                   fill="currentColor"
                   className="svgMensaje"
+                  onClick={handleEspandido}
                 >
                   <path d="M15 11L8 6.39 1 11V8.61L8 4l7 4.61z"></path>
                 </svg>
@@ -56,6 +66,7 @@ export const Container = () => {
             </ul>
           </div>
         </section>
+
       </section>
       <section className="liMovil">
         <ul className="containerLiMovil">
@@ -74,7 +85,7 @@ export const Container = () => {
             </svg>
             <span className="nombreLogo home">Inicio</span>
           </li>
-          <li className="liNav">
+          <li className="liNav" onClick={handleNotifications}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -87,9 +98,11 @@ export const Container = () => {
             >
               <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
             </svg>
-            <span className="nombreLogo" translate="no">Mi red</span>
+            <span className="nombreLogo" translate="no">
+              Mi red
+            </span>
           </li>
-          <li className="liNav">
+          <li className="liNav" onClick={handleNotifications}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 21 21"
@@ -104,7 +117,7 @@ export const Container = () => {
             </svg>
             <span className="nombreLogo">Publicar</span>
           </li>
-          <li className="liNav">
+          <li className="liNav" onClick={handleNotifications}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -119,7 +132,7 @@ export const Container = () => {
             </svg>
             <span className="nombreLogo">Notificaciones</span>
           </li>
-          <li className="liNav">
+          <li className="liNav" onClick={handleNotifications}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
