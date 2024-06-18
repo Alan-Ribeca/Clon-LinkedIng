@@ -2,17 +2,13 @@ import { MiCard } from "../izquierda/MiCard";
 import { Medio } from "../medio/Medio";
 import { Derecha } from "../derecha/Derecha";
 import { ClassContext } from "../../context/StateCompo";
-import { useContext, useState } from "react";
+import { useContext,  } from "react";
 import "./container.scss";
 
 export const Container = () => {
-  const { handleNotifications } = useContext(ClassContext);
+  const { handleNotifications, handleEspandido, mensajeEspandido } = useContext(ClassContext);
 
-  const [mensajeEspandido, setMensajeEspandido] = useState();
 
-  const handleEspandido = () => {
-    setMensajeEspandido(!mensajeEspandido);
-  };
   return (
     <>
       <section className="containerGrid">

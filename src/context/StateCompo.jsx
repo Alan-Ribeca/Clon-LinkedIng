@@ -39,8 +39,15 @@ const ClassProvider = ({ children }) => {
     }
   };
 
+  
+  const [mensajeEspandido, setMensajeEspandido] = useState();
+
+  const handleEspandido = () => {
+    setMensajeEspandido(!mensajeEspandido);
+  };
+
   return (
-    <ClassContext.Provider value={{ active, toggleClass, handleNotifications }}>
+    <ClassContext.Provider value={{ active, toggleClass, handleNotifications, handleEspandido, mensajeEspandido}}>
       {children}
     </ClassContext.Provider>
   );
