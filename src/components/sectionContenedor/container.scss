@@ -289,7 +289,7 @@
 
 @media screen and (max-width: 600px) {
   .containerGrid {
-    grid-template-columns: 450px;
+    grid-template-columns: 100%;
 
     .mensaje {
       display: none;
