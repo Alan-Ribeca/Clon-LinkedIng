@@ -1,6 +1,18 @@
+import { useState } from "react";
 import "./publicar.scss";
 
 export const Publicar = () => {
+  const [ordenar, setOrdenar] = useState();
+
+  const hanldeVisible = () => {
+    setOrdenar(!ordenar);
+  };
+
+  const [parrafoColor, setParrafoColor] = useState("pPrincipal");
+
+  const handleClasePublic = (tipo) => {
+    setParrafoColor(tipo);
+  };
   return (
     <article className="containerMid">
       <section className="buscadorContainer">
@@ -63,7 +75,7 @@ export const Publicar = () => {
 
       <div className="lineaSeparadora">
         <hr className="hrSepara" />
-        <p className="orden">
+        <p className="orden" onClick={hanldeVisible}>
           Ordenar por:{" "}
           <strong>
             Principal{" "}
@@ -78,6 +90,27 @@ export const Publicar = () => {
             </svg>
           </strong>{" "}
         </p>
+
+        {ordenar && (
+          <div className="ordenarContainer">
+            <p
+              className={`pPrincipal ${
+                parrafoColor === "pPrincipal" ? "ordenarPubli" : ""
+              }`}
+              onClick={() => handleClasePublic("pPrincipal")}
+            >
+              Principal
+            </p>
+            <p
+              className={`recientes ${
+                parrafoColor === "recientes" ? "ordenarPubli" : ""
+              }`}
+              onClick={() => handleClasePublic("recientes")}
+            >
+              Recientes
+            </p>
+          </div>
+        )}
       </div>
     </article>
   );

@@ -133,6 +133,38 @@
       right: -19%;
     }
   }
+
+  .ordenarContainer {
+    position: absolute;
+    z-index: 1;
+    right: 0%;
+    top: 100%;
+    width: 168px;
+    height: 79px;
+    background-color: white;
+    border-radius: 8px 3px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.28);
+
+    p {
+      padding-left: 1.2rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      &:hover {
+        background-color: rgba(140, 140, 140, 0.1);
+      }
+    }
+
+    .ordenarPubli {
+      border-left: 2px solid #01754f;
+      color: #01754f;
+      padding-left: 1.11rem;
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -194,21 +226,20 @@
     .hrSepara {
       width: 68.5%;
     }
-  
+
     .orden {
       right: 4.5%;
     }
   }
 }
 
-@media screen and (max-width: 767px) { 
-  .buscadorContainer .escribir .inputEscribir { 
+@media screen and (max-width: 767px) {
+  .buscadorContainer .escribir .inputEscribir {
     width: 81.4%;
   }
 
   .lineaSeparadora {
-
-    .hrSepara{
+    .hrSepara {
       width: 74.3%;
     }
 
@@ -218,9 +249,8 @@
   }
 }
 
-
-@media screen and (max-width: 600px) {  
-  .lineaSeparadora .hrSepara{
+@media screen and (max-width: 600px) {
+  .lineaSeparadora .hrSepara {
     width: 67.3%;
   }
 
@@ -229,7 +259,7 @@
   }
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   .containerMid {
     display: none;
   }

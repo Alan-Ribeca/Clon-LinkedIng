@@ -39,15 +39,30 @@ const ClassProvider = ({ children }) => {
     }
   };
 
-  
   const [mensajeEspandido, setMensajeEspandido] = useState();
 
   const handleEspandido = () => {
     setMensajeEspandido(!mensajeEspandido);
   };
 
+  const [claseMsj, setClaseMsj] = useState("prioritarios");
+
+  const handleClase = (tipo) => {
+    setClaseMsj(tipo);
+  };
+
   return (
-    <ClassContext.Provider value={{ active, toggleClass, handleNotifications, handleEspandido, mensajeEspandido}}>
+    <ClassContext.Provider
+      value={{
+        active,
+        toggleClass,
+        handleNotifications,
+        handleEspandido,
+        mensajeEspandido,
+        claseMsj,
+        handleClase,
+      }}
+    >
       {children}
     </ClassContext.Provider>
   );

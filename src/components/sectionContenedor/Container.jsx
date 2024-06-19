@@ -2,18 +2,13 @@ import { MiCard } from "../izquierda/MiCard";
 import { Medio } from "../medio/Medio";
 import { Derecha } from "../derecha/Derecha";
 import { ClassContext } from "../../context/StateCompo";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import "./container.scss";
 
 export const Container = () => {
-  const { handleNotifications, handleEspandido, mensajeEspandido } =
+  const { handleNotifications, handleEspandido, mensajeEspandido, claseMsj, handleClase} =
     useContext(ClassContext);
 
-  const [claseMsj, setClaseMsj] = useState("prioritarios");
-
-  const handleClase = (tipo) => {
-    setClaseMsj(tipo);
-  };
 
   return (
     <>
