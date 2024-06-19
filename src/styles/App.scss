@@ -529,12 +529,16 @@
 
       .p {
         .prioritarios {
-          color: #37c898;
-          border-color: #37c898;
+          color: #b0b3b8;
         }
 
         .otros {
           color: #b0b3b8;
+        }
+
+        .activa {
+          color: #37c898;
+          border-bottom: 2px solid #37c898;
         }
       }
 

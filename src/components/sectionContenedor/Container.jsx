@@ -2,12 +2,18 @@ import { MiCard } from "../izquierda/MiCard";
 import { Medio } from "../medio/Medio";
 import { Derecha } from "../derecha/Derecha";
 import { ClassContext } from "../../context/StateCompo";
-import { useContext,  } from "react";
+import { useContext, useState } from "react";
 import "./container.scss";
 
 export const Container = () => {
-  const { handleNotifications, handleEspandido, mensajeEspandido } = useContext(ClassContext);
+  const { handleNotifications, handleEspandido, mensajeEspandido } =
+    useContext(ClassContext);
 
+  const [claseMsj, setClaseMsj] = useState("prioritarios");
+
+  const handleClase = (tipo) => {
+    setClaseMsj(tipo);
+  };
 
   return (
     <>
@@ -99,20 +105,23 @@ export const Container = () => {
                 </svg>
               </div>
               <div className="p">
-                <p className="prioritarios">Prioritarios</p>
-                <p className="otros">Otros</p>
+                <p className={`prioritarios ${claseMsj === "prioritarios" ? "activa" : ""}`} onClick={() => handleClase("prioritarios")}>
+                  Prioritarios
+                </p>
+                <p className={`otros ${claseMsj === "otros" ? "activa" : ""}`} onClick={() => handleClase("otros")}>
+                  Otros
+                </p>
               </div>
               <div className="containerBottom">
-                <svg className="svgImg">
-                  <image href="https://static.licdn.com/aero-v1/sc/h/eeol4w9o9de2j4gq699mzx79d"></image>
-                </svg>
-
+                <img src="./img/imgMsj.svg" alt="" />
                 <h3 className="pAviso">Aún no hay mensajes</h3>
                 <p className="textoMensaje">
                   Comunícate y entabla una conversación para avanzar
                   profesionalmente
                 </p>
-                <button className="enviarMsj">Enviar un mensaje</button>
+                <button className="enviarMsj" onClick={handleNotifications}>
+                  Enviar un mensaje
+                </button>
               </div>
             </>
           )}
