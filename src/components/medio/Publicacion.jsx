@@ -2,6 +2,8 @@ import "./publicacion.scss";
 import { useState } from "react";
 
 export const Publicacion = () => {
+
+
   const [post, setPost] = useState([
     {
       img: "./img/public5Perf.jpeg",
@@ -22,8 +24,7 @@ export const Publicacion = () => {
     {
       img: "./img/public6Perf.jpeg",
       nombre: "Brais Moure",
-      descripcion:
-        "Freelance full-stack Dev | iOS &amp; Android Engineer | Divulgador sobre programación de Apps",
+      descripcion: "Freelance full-stack Dev | iOS &amp; Android Engineer | Divulgador sobre programación de Apps",
       hora: "23 horas",
       titulo:
         "Un framework de código abierto para crear UI Web con PYTHON y componentes de ANGULAR.",
@@ -65,7 +66,7 @@ export const Publicacion = () => {
       img: "./img/public3Perf.jpeg",
       nombre: "Codigo Facilito",
       descripcion: "56.200 segudores",
-      hora: "23 horas",
+      hora: "21 horas",
       titulo: "Quedan pocos días de la #FeriaDeCursosGratis 🎡",
       imgPublicada: "./img/public3.jpeg",
       mg: 213,
@@ -91,8 +92,7 @@ export const Publicacion = () => {
     {
       img: "./img/public5Perf.jpg",
       nombre: "Abraham John",
-      descripcion:
-        "UI/UX Design | Visual design, Prototype, User research | I Help e-commerce",
+      descripcion: "UI/UX Design | Visual design, Prototype, User research | I Help e-commerce",
       hora: "7 horas",
       titulo:
         "Diseñadores de UI/UX, aquí hay tipos de pestañas que deben conocer al diseñar su próximo proyecto de diseño de UI.",
