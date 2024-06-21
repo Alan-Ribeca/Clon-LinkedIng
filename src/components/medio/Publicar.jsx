@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ClassContext } from "../../context/StateCompo";
 import "./publicar.scss";
 
 export const Publicar = () => {
+  const { handleAbrirPublic, abrirPublic } = useContext(ClassContext);
+
   const [ordenar, setOrdenar] = useState();
-  const [abrirPublic, setAbrirPublic] = useState();
 
   const hanldeVisible = () => {
     setOrdenar(!ordenar);
@@ -13,10 +15,6 @@ export const Publicar = () => {
 
   const handleClasePublic = (tipo) => {
     setParrafoColor(tipo);
-  };
-
-  const handleAbrirPublic = () => {
-    setAbrirPublic(!abrirPublic);
   };
 
   return (

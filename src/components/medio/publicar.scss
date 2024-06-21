@@ -483,11 +483,30 @@
   .abrirPublic {
     width: 100%;
     right: inherit;
+    top: -1%;
+    height: 102vh;
+
+    .bottomContainer {
+      .losSvg {
+        margin-top: 3.44rem;
+        width: 60%;
+
+        strong {
+          &.uno::before {
+            left: -10px;
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 500px) {
   .containerMid {
     display: none;
+  }
+
+  .abrirPublic {
+    background-color: red;
   }
 }

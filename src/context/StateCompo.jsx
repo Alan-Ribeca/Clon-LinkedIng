@@ -51,6 +51,14 @@ const ClassProvider = ({ children }) => {
     setClaseMsj(tipo);
   };
 
+
+  const [abrirPublic, setAbrirPublic] = useState();
+
+  const handleAbrirPublic = () => {
+    setAbrirPublic(!abrirPublic);
+  };
+
+
   return (
     <ClassContext.Provider
       value={{
@@ -61,6 +69,8 @@ const ClassProvider = ({ children }) => {
         mensajeEspandido,
         claseMsj,
         handleClase,
+        handleAbrirPublic,
+        abrirPublic
       }}
     >
       {children}

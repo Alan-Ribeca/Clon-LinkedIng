@@ -6,9 +6,13 @@ import { useContext } from "react";
 import "./container.scss";
 
 export const Container = () => {
-  const { handleNotifications, handleEspandido, mensajeEspandido, claseMsj, handleClase} =
-    useContext(ClassContext);
-
+  const {
+    handleNotifications,
+    handleEspandido,
+    mensajeEspandido,
+    claseMsj,
+    handleClase,
+  } = useContext(ClassContext);
 
   return (
     <>
@@ -100,10 +104,18 @@ export const Container = () => {
                 </svg>
               </div>
               <div className="p">
-                <p className={`prioritarios ${claseMsj === "prioritarios" ? "activa" : ""}`} onClick={() => handleClase("prioritarios")}>
+                <p
+                  className={`prioritarios ${
+                    claseMsj === "prioritarios" ? "activa" : ""
+                  }`}
+                  onClick={() => handleClase("prioritarios")}
+                >
                   Prioritarios
                 </p>
-                <p className={`otros ${claseMsj === "otros" ? "activa" : ""}`} onClick={() => handleClase("otros")}>
+                <p
+                  className={`otros ${claseMsj === "otros" ? "activa" : ""}`}
+                  onClick={() => handleClase("otros")}
+                >
                   Otros
                 </p>
               </div>
