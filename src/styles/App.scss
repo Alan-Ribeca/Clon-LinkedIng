@@ -348,7 +348,7 @@
 
         .ordenarPubli {
           color: #37c898;
-          border-color: #37c898;;
+          border-color: #37c898;
         }
       }
     }
@@ -430,6 +430,82 @@
           span {
             color: #007fff;
           }
+        }
+      }
+    }
+
+    .abrirPublic {
+      background-color: #1d2226;
+
+      .infoPublic {
+        color: rgba(255, 255, 255, 0.877);
+
+        .infoP {
+          .lugarPublic {
+            color: rgba(255, 255, 255, 0.877);
+          }
+
+          .ContainerFlecha {
+            fill: #b0b3b8;
+          }
+        }
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.18);
+        }
+      }
+
+      .cerrar {
+        color: #b0b3b8;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      .inputContainer .input {
+        color: white;
+
+        &::placeholder {
+          color: #b0b3b8;
+        }
+      }
+
+      .svgFeliz {
+        fill: #b0b3b8;
+      }
+
+      .bottomContainer {
+        border-color: rgba(140, 140, 140, 0.2);
+        .losSvg {
+          svg {
+            fill: #b0b3b8;
+
+            &:hover {
+              fill: white;
+            }
+          }
+
+          strong::before {
+            background-color: #1d2226;
+            color: white;
+            box-shadow: 0px 0px 23px -14px rgba(255, 255, 255, 28%);
+            border: 1px solid #ffffff0f;
+          }
+        }
+      }
+
+      .publicar {
+        svg {
+          fill: #b0b3b8;
+
+          &:hover {
+            fill: white;
+          }
+        }
+
+        .btnPublicar {
+          background-color: #5b5b5c;
+          color: rgba(255, 255, 255, 0.877);
         }
       }
     }

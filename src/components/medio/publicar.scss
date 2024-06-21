@@ -106,9 +106,10 @@
   height: 590px;
   background-color: white;
   border-radius: 8px;
+  margin: 0 auto;
   position: absolute;
-  right: 17.1%;
-  top: -0.06%;
+  top: -0.08%;
+  right: 15%;
   z-index: 1;
   box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.28);
 
@@ -408,8 +409,19 @@
       }
     }
   }
+
+  .abrirPublic {
+    left: 17%;
+    right: inherit;
+  }
 }
 
+@media screen and (max-width: 1024px) {
+  .abrirPublic {
+    left: inherit;
+    right: 3%;
+  }
+}
 @media screen and (max-width: 991px) {
   .buscadorContainer {
     height: 7.25rem;
@@ -436,6 +448,13 @@
   }
 }
 
+@media screen and (max-width: 786px) {
+  .abrirPublic {
+    width: 590px;
+    right: 1%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .buscadorContainer .escribir .inputEscribir {
     width: 81.4%;
@@ -459,6 +478,11 @@
 
   .buscadorContainer .escribir .inputEscribir {
     width: 75%;
+  }
+
+  .abrirPublic {
+    width: 100%;
+    right: inherit;
   }
 }
 
