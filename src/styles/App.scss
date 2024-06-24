@@ -510,6 +510,39 @@
       }
     }
 
+    .publicarMovil {
+      background-color: #1d2226;
+
+      svg,
+      .flecha {
+        fill: #b0b3b8;
+        color: #b0b3b8;
+      }
+
+      .img {
+        .imgPerfil {
+          .elegirLugar,
+          .flecha {
+            color: #ffffffe0;
+            fill: #ffffffe0;
+          }
+        }
+      }
+
+      .btnPublicar {
+        background-color: #5b5b5c;
+        color: #ffffffe0;
+      }
+
+      .input {
+        color: white;
+
+        &::placeholder {
+          color: #b0b3b8;
+        }
+      }
+    }
+
     //fin mid
 
     //inicio right
