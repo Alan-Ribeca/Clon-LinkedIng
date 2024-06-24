@@ -4,6 +4,7 @@ import { Derecha } from "../derecha/Derecha";
 import { ClassContext } from "../../context/StateCompo";
 import { useContext } from "react";
 import "./container.scss";
+import "./inputMsj.scss";
 
 export const Container = () => {
   const {
@@ -12,6 +13,8 @@ export const Container = () => {
     mensajeEspandido,
     claseMsj,
     handleClase,
+    handleAbrirPublic,
+    abrirPublic,
   } = useContext(ClassContext);
 
   return (
@@ -168,7 +171,7 @@ export const Container = () => {
               Mi red
             </span>
           </li>
-          <li className="liNav" onClick={handleNotifications}>
+          <li className="liNav" onClick={handleAbrirPublic}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 21 21"
@@ -215,6 +218,79 @@ export const Container = () => {
           </li>
         </ul>
       </section>
+      {abrirPublic && (
+        <section className="publicar">
+          <div className="img">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="cerrar"
+            >
+              <path
+                d="M13.42 12L20 18.58 18.58 20 12 13.42 5.42 20 4 18.58 10.58 12 4 5.42 5.42 4 12 10.58 18.58 4 20 5.42z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <div className="imgPerfil">
+              <img src="./img/avatare2.jpg" alt="foto de perfil" />
+              <p className="elegirLugar">Cualquiera</p>
+              <span className="flechita">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                  className="flecha"
+                >
+                  <path d="M8 11L3 6h10z" fillRule="evenodd"></path>
+                </svg>
+              </span>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              className="reloj"
+            >
+              <g>
+                <path d="M2 12A10 10 0 1012 2 10 10 0 002 12zm2 0a8 8 0 118 8 8 8 0 01-8-8z"></path>
+                <path d="M15.1 12.63L13 11.42V7a1 1 0 00-2 0v5a1 1 0 00.51.85l2.59 1.52a1 1 0 101-1.74z"></path>
+              </g>
+            </svg>
+
+            <button className="btnPublicar">Publicar</button>
+          </div>
+          <div className="escribirMsj">
+            <div className="containerInput">
+              <input
+                type="text"
+                className="input"
+                placeholder="Comparte tus ideas..."
+              />
+            </div>
+          </div>
+          <div className="svgAgregar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              className="svgFoto"
+            >
+              <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 13h-8v8h-2v-8H3v-2h8V3h2v8h8z"></path>
+            </svg>
+          </div>
+        </section>
+      )}
     </>
   );
 };
