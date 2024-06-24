@@ -219,12 +219,13 @@ export const Container = () => {
         </ul>
       </section>
       {abrirPublic && (
-        <section className="publicar">
+        <section className="publicarMovil">
           <div className="img">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               className="cerrar"
+              onClick={handleAbrirPublic}
             >
               <path
                 d="M13.42 12L20 18.58 18.58 20 12 13.42 5.42 20 4 18.58 10.58 12 4 5.42 5.42 4 12 10.58 18.58 4 20 5.42z"
@@ -258,7 +259,6 @@ export const Container = () => {
                 <path d="M15.1 12.63L13 11.42V7a1 1 0 00-2 0v5a1 1 0 00.51.85l2.59 1.52a1 1 0 101-1.74z"></path>
               </g>
             </svg>
-
             <button className="btnPublicar">Publicar</button>
           </div>
           <div className="escribirMsj">
