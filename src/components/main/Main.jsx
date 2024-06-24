@@ -4,10 +4,10 @@ import { ClassContext } from "../../context/StateCompo";
 import { useContext } from "react";
 
 export const Main = () => {
-  const { active } = useContext(ClassContext);
+  const { active, clasePublic } = useContext(ClassContext);
   return (
-    <main  className={`main ${active ? "oscuroMain" : ""}`}>
-        <Container />
+    <main className={`main ${active ? "oscuroMain" : ""} ${clasePublic ? "statico" : ""}`}>
+      <Container />
     </main>
-  )
-}
+  );
+};

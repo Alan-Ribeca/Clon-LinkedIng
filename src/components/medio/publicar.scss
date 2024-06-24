@@ -102,204 +102,217 @@
   }
 }
 
-.abrirPublic {
-  width: 744px;
-  height: 590px;
-  background-color: white;
-  border-radius: 8px;
-  margin: 0 auto;
-  position: absolute;
-  top: -0.08%;
-  right: 15%;
-  z-index: 1;
-  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.28);
+.oscurecer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 
-  svg {
-    width: 24px;
-    height: 24px;
-  }
+  .abrirPublic {
+    width: 744px;
+    height: 590px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    position: absolute;
+    top: 4.92%;
 
-  .infoPublic {
-    width: max-content;
-    display: flex;
-    margin: 1rem 1rem 0.5rem 1rem;
-    padding: 1rem;
+    z-index: 1;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.28);
 
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.08);
-      border-radius: 1rem;
-      cursor: pointer;
+    svg {
+      width: 24px;
+      height: 24px;
     }
 
-    img {
-      width: 48px;
-      height: 48px;
-    }
+    .infoPublic {
+      width: max-content;
+      display: flex;
+      margin: 1rem 1rem 0.5rem 1rem;
+      padding: 1rem;
 
-    .infoP {
-      margin-left: 0.7rem;
-      position: relative;
-
-      .nombre {
-        font-size: 20px;
-        font-weight: 500;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+        border-radius: 1rem;
+        cursor: pointer;
       }
 
-      .ContainerFlecha {
-        position: absolute;
-        top: 0.4%;
-        right: 0%;
-        width: 22px;
-        height: 22px;
-        fill: rgba(0, 0, 0, 0.6);
-        svg {
+      img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .infoP {
+        margin-left: 0.7rem;
+        position: relative;
+
+        .nombre {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        .ContainerFlecha {
+          position: absolute;
+          top: 0.4%;
+          right: 0%;
           width: 22px;
           height: 22px;
+          fill: rgba(0, 0, 0, 0.6);
+          svg {
+            width: 22px;
+            height: 22px;
+          }
+        }
+
+        .lugarPublic {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(0, 0, 0, 0.9);
         }
       }
-
-      .lugarPublic {
-        font-size: 14px;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0.9);
-      }
     }
-  }
-  .cerrar {
-    position: absolute;
-    right: 3%;
-    top: 3%;
-    color: rgba(0, 0, 0, 0.8);
-    width: 24px;
-    height: 24px;
-
-    &:hover {
-      cursor: pointer;
-      color: black;
-    }
-  }
-
-  .inputContainer {
-    height: 54.6%;
-
-    .input {
-      width: 90%;
-      height: 20%;
-      border: none;
-      padding: 0 2rem;
-      font-size: 20px;
-      background-color: transparent;
-      &:focus {
-        outline: none;
-      }
-
-      &::placeholder {
-        font-size: 20px;
-      }
-    }
-  }
-
-  .bottomContainer {
-    padding: 0 2rem;
-    border-bottom: 1px solid rgba(140, 140, 140, 0.2);
-    height: 16.7%;
-
-    .svgFeliz {
-      fill: rgba(0, 0, 0, 0.8);
+    .cerrar {
+      position: absolute;
+      right: 3%;
+      top: 3%;
+      color: rgba(0, 0, 0, 0.8);
+      width: 24px;
+      height: 24px;
 
       &:hover {
         cursor: pointer;
+        color: black;
       }
     }
 
-    .losSvg {
-      width: 29%;
-      margin-top: 1.44rem;
-      display: flex;
-      justify-content: space-between;
+    .inputContainer {
+      height: 54.6%;
 
-      strong {
-        position: relative;
-        transition: 0.9s;
-
-        &.uno::before {
-          content: "Añadir contenido";
-          left: -55px;
+      .input {
+        width: 90%;
+        height: 20%;
+        border: none;
+        padding: 0 2rem;
+        font-size: 20px;
+        background-color: transparent;
+        &:focus {
+          outline: none;
         }
 
-        &.dos::before {
-          content: "Crear un evento";
-          left: -48px;
+        &::placeholder {
+          font-size: 20px;
         }
+      }
+    }
 
-        &.tres::before {
-          content: "Celebrar una ocasion especial";
-          left: -89px;
-        }
+    .bottomContainer {
+      padding: 0 2rem;
+      border-bottom: 1px solid rgba(140, 140, 140, 0.2);
+      height: 16.7%;
 
-        &.cuatro::before {
-          content: "Mas";
-          left: -11px;
-        }
-
-        &::before {
-          display: none;
-        }
+      .svgFeliz {
+        fill: rgba(0, 0, 0, 0.8);
 
         &:hover {
           cursor: pointer;
-
-          &::before {
-            position: absolute;
-            display: block;
-            font-size: 14px;
-            font-weight: 400;
-            width: max-content;
-            text-align: center;
-            padding: 0.6rem;
-            top: -47px;
-            background-color: white;
-            color: rgba(0, 0, 0, 0.8);
-            box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.28);
-            border-radius: 8px;
-            z-index: 1;
-          }
         }
       }
 
-      svg {
-        fill: rgba(0, 0, 0, 0.6);
+      .losSvg {
+        width: 29%;
+        margin-top: 1.44rem;
+        display: flex;
+        justify-content: space-between;
+
+        strong {
+          position: relative;
+          transition: 0.9s;
+
+          &.uno::before {
+            content: "Añadir contenido";
+            left: -55px;
+          }
+
+          &.dos::before {
+            content: "Crear un evento";
+            left: -48px;
+          }
+
+          &.tres::before {
+            content: "Celebrar una ocasion especial";
+            left: -89px;
+          }
+
+          &.cuatro::before {
+            content: "Mas";
+            left: -11px;
+          }
+
+          &::before {
+            display: none;
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            &::before {
+              position: absolute;
+              display: block;
+              font-size: 14px;
+              font-weight: 400;
+              width: max-content;
+              text-align: center;
+              padding: 0.6rem;
+              top: -47px;
+              background-color: white;
+              color: rgba(0, 0, 0, 0.8);
+              box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.28);
+              border-radius: 8px;
+              z-index: 1;
+            }
+          }
+        }
+
+        svg {
+          fill: rgba(0, 0, 0, 0.6);
+        }
       }
     }
-  }
 
-  .publicar {
-    height: 10%;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    margin-right: 1rem;
-
-    .btnPublicar {
-      border: none;
-      border-radius: 1.6rem;
-      width: 89px;
-      height: 31px;
-      padding: 6px 16px;
-      font-size: 16px;
-      color: rgba(0, 0, 0, 0.3);
-      background-color: rgba(140, 140, 140, 0.2);
-      font-weight: 600;
+    .publicar {
+      height: 10%;
       display: flex;
       align-items: center;
-      margin-left: 0.68rem;
-    }
+      flex-direction: row-reverse;
+      margin-right: 1rem;
 
-    svg {
-      fill: rgba(0, 0, 0, 0.8);
+      .btnPublicar {
+        border: none;
+        border-radius: 1.6rem;
+        width: 89px;
+        height: 31px;
+        padding: 6px 16px;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(140, 140, 140, 0.2);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        margin-left: 0.68rem;
+      }
 
-      &:hover {
-        cursor: pointer;
+      svg {
+        fill: rgba(0, 0, 0, 0.8);
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -418,9 +431,11 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .abrirPublic {
-    left: inherit;
-    right: 3%;
+  .oscurecer {
+    .abrirPublic {
+      left: inherit;
+      right: 3%;
+    }
   }
 }
 @media screen and (max-width: 991px) {
@@ -450,9 +465,11 @@
 }
 
 @media screen and (max-width: 786px) {
-  .abrirPublic {
-    width: 590px;
-    right: 1%;
+  .oscurecer {
+    .abrirPublic {
+      width: 590px;
+      right: 1%;
+    }
   }
 }
 
@@ -481,20 +498,22 @@
     width: 75%;
   }
 
-  .abrirPublic {
-    width: 100%;
-    right: inherit;
-    top: -1%;
-    height: 102vh;
+  .oscurecer {
+    .abrirPublic {
+      width: 100%;
+      right: inherit;
+      top: -1%;
+      height: 102vh;
 
-    .bottomContainer {
-      .losSvg {
-        margin-top: 3.44rem;
-        width: 60%;
+      .bottomContainer {
+        .losSvg {
+          margin-top: 3.44rem;
+          width: 60%;
 
-        strong {
-          &.uno::before {
-            left: -10px;
+          strong {
+            &.uno::before {
+              left: -10px;
+            }
           }
         }
       }
@@ -505,9 +524,5 @@
 @media screen and (max-width: 500px) {
   .containerMid {
     display: none;
-  }
-
-  .abrirPublic {
-    background-color: red;
   }
 }

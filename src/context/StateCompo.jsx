@@ -53,9 +53,11 @@ const ClassProvider = ({ children }) => {
 
 
   const [abrirPublic, setAbrirPublic] = useState();
+  const [clasePublic, setClasePublic] = useState();
 
   const handleAbrirPublic = () => {
     setAbrirPublic(!abrirPublic);
+    setClasePublic(!abrirPublic);
   };
 
 
@@ -70,7 +72,9 @@ const ClassProvider = ({ children }) => {
         claseMsj,
         handleClase,
         handleAbrirPublic,
-        abrirPublic
+        abrirPublic,
+        clasePublic,
+        setClasePublic,
       }}
     >
       {children}
