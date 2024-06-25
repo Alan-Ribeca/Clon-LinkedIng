@@ -3,7 +3,7 @@ import { ClassContext } from "../../context/StateCompo";
 import "./publicar.scss";
 
 export const Publicar = () => {
-  const { handleAbrirPublic, abrirPublic } = useContext(ClassContext);
+  const { handleAbrirPublic, abrirPublic, handleNotifications } = useContext(ClassContext);
 
   const [ordenar, setOrdenar] = useState();
 
@@ -145,7 +145,7 @@ export const Publicar = () => {
               </div>
             </div>
             <div className="publicar">
-              <button className="btnPublicar">Publicar</button>
+              <button className="btnPublicar" onClick={handleNotifications}>Publicar</button>
               <svg xmlns="http://www.w3.org/2000/svg">
                 <g>
                   <path d="M2 12A10 10 0 1012 2 10 10 0 002 12zm2 0a8 8 0 118 8 8 8 0 01-8-8z"></path>
